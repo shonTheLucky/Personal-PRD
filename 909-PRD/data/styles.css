@@ -7,6 +7,8 @@
   text-align:center;
   line-height:normal;
 }
+.image {
+}
 .heading_1 {
   font-family:'ArialMT', 'Arial';
   font-weight:bold;
@@ -53,4 +55,19 @@
 }
 .paragraph1 {
   text-align:left;
+}
+.image1 {
+  color:#000000;
+}
+.shape {
+}
+.table_cell {
+}
+.box_2 {
+}
+.label {
+  font-size:14px;
+  text-align:left;
+}
+.box_1 {
 }
