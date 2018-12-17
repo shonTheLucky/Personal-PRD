@@ -1,0 +1,107 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <title>评论999+高亮</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <link href="resources/css/jquery-ui-themes.css" type="text/css" rel="stylesheet"/>
+    <link href="resources/css/axure_rp_page.css" type="text/css" rel="stylesheet"/>
+    <link href="data/styles.css" type="text/css" rel="stylesheet"/>
+    <link href="files/评论999_高亮/styles.css" type="text/css" rel="stylesheet"/>
+    <script src="resources/scripts/jquery-1.7.1.min.js"></script>
+    <script src="resources/scripts/jquery-ui-1.8.10.custom.min.js"></script>
+    <script src="resources/scripts/prototypePre.js"></script>
+    <script src="data/document.js"></script>
+    <script src="resources/scripts/prototypePost.js"></script>
+    <script src="files/评论999_高亮/data.js"></script>
+    <script type="text/javascript">
+      $axure.utils.getTransparentGifPath = function() { return 'resources/images/transparent.gif'; };
+      $axure.utils.getOtherPath = function() { return 'resources/Other.html'; };
+      $axure.utils.getReloadPath = function() { return 'resources/reload.html'; };
+    </script>
+  </head>
+  <body>
+    <div id="base" class="">
+
+      <!-- Unnamed (Image) -->
+      <div id="u0" class="ax_default image">
+        <img id="u0_img" class="img " src="images/评论999_高亮/u0.png"/>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u1" class="ax_default heading_2">
+        <div id="u1_div" class=""></div>
+        <div id="u1_text" class="text ">
+          <p><span>补充需求—评论区图片的缩略图展示逻辑</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u2" class="ax_default paragraph">
+        <div id="u2_div" class=""></div>
+        <div id="u2_text" class="text ">
+          <p style="font-size:18px;"><span style="font-family:'PingFangSC-Regular', 'PingFang SC';text-decoration:underline;">客户端改动：</span></p><p style="font-size:16px;"><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">1、当某条评论带图片时，服务端会在返回评论列表数据时，同时返回该图片缩略图的尺寸。客户端根据尺寸确定模块高度。</span></p><p style="font-size:16px;"><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">2、评论区加载缩略图时，服务端会在缩略图的url后方宽、高数值的后缀，客户端取到对应宽高比的缩略图，展示在评论区。</span></p><p style="font-size:16px;"><span style="font-family:'PingFangSC-Regular', 'PingFang SC';"><br></span></p><p style="font-size:16px;"><span style="font-family:'PingFangSC-Regular', 'PingFang SC';"><br></span></p><p style="font-size:16px;"><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">评论上传图片改一个接口</span></p><p style="font-size:16px;"><span style="font-family:'PingFangSC-Regular', 'PingFang SC';"><br></span></p><p style="font-size:16px;"><span style="font-family:'PingFangSC-Regular', 'PingFang SC';"><br></span></p><p style="font-size:18px;"><span style="font-family:'PingFangSC-Regular', 'PingFang SC';text-decoration:underline;">核心限制逻辑：</span></p><p style="font-size:16px;"><span style="font-family:'ArialMT', 'Arial';">1</span><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">、宽度最高为300px，高度最高为650px</span></p><p style="font-size:16px;"><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">2、缩略图未达到650px时，客户端下一条评论需要顶到图片底部，而不是固定按照650留白</span></p><p style="font-size:16px;"><span style="font-family:'PingFangSC-Regular', 'PingFang SC';"><br></span></p><p style="font-size:18px;"><span style="font-family:'PingFangSC-Regular', 'PingFang SC';text-decoration:underline;">针对各种图片的处理方式：</span></p><p style="font-size:16px;"><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">1、宽较高图——w&gt;300且650&lt;h≤6.5/3w，则宽度压缩到300px，高度等比例压缩</span></p><p style="font-size:16px;"><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">2、宽矮图——宽w&gt;300且h＜650≤6.5/3w，则宽度压缩到300px，高度等比例压缩</span></p><p style="font-size:16px;"><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">3、窄高图——w≤300且h≤6.5/3w，则展示原图</span></p><p style="font-size:16px;"><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">4、宽高图——w&gt;300且h&gt;6.5/3w，则宽度压缩到300px，高度等比例压缩后，截取顶部650px</span></p><p style="font-size:16px;"><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">5、窄矮图——w≤300且650&gt;h&gt;6.5/3w，则展示原图</span></p><p style="font-size:16px;"><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">6、窄超高图——w≤300且h&gt;650，则截取顶部650px</span></p><p style="font-size:16px;"><span style="font-family:'PingFangSC-Regular', 'PingFang SC';"><br></span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u3" class="ax_default heading_2">
+        <div id="u3_div" class=""></div>
+        <div id="u3_text" class="text ">
+          <p><span>评论入口优化</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Image) -->
+      <div id="u4" class="ax_default image">
+        <img id="u4_img" class="img " src="images/评论999_高亮/u4.jpg"/>
+      </div>
+
+      <!-- Unnamed (Image) -->
+      <div id="u5" class="ax_default image">
+        <img id="u5_img" class="img " src="images/评论999_高亮/u5.jpg"/>
+      </div>
+
+      <!-- Unnamed (Ellipse) -->
+      <div id="u6" class="ax_default heading_3">
+        <img id="u6_img" class="img " src="images/评论999_高亮/u6.png"/>
+        <div id="u6_text" class="text ">
+          <p><span>写真模式视觉图</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Ellipse) -->
+      <div id="u7" class="ax_default heading_3">
+        <img id="u7_img" class="img " src="images/评论999_高亮/u6.png"/>
+        <div id="u7_text" class="text ">
+          <p><span>封面模式视觉图</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u8" class="ax_default paragraph">
+        <div id="u8_div" class=""></div>
+        <div id="u8_text" class="text ">
+          <p style="font-size:18px;"><span style="font-family:'PingFangSC-Semibold', 'PingFang SC Semibold', 'PingFang SC';font-weight:600;">-需求逻辑</span></p><p style="font-size:16px;"><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">当某个内容的评论数据达到999+时，对评论入口进行视觉强化，效果图如左图。</span></p><p style="font-size:16px;"><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">（播放器页面不跟换肤）</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u9" class="ax_default heading_2">
+        <div id="u9_div" class=""></div>
+        <div id="u9_text" class="text ">
+          <p><span>需求背景</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u10" class="ax_default paragraph">
+        <div id="u10_div" class=""></div>
+        <div id="u10_text" class="text ">
+          <p><span>评论整体体验存在一些问题，需要优化</span></p><p><span>当前主要优化两块：</span></p><p><span>1.优秀评论的入口强化</span></p><p><span>2.ios图片评论体验的优化</span></p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
