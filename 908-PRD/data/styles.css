@@ -85,6 +85,10 @@
 }
 .arrow {
 }
+.text_field {
+  color:#000000;
+  text-align:left;
+}
 .icon {
 }
 .html_button {
@@ -92,4 +96,27 @@
 }
 .paragraph1 {
   text-align:left;
+}
+.heading_11 {
+  font-family:'Arial-BoldMT', 'Arial Bold', 'Arial';
+  font-weight:700;
+  font-style:normal;
+  font-size:32px;
+  text-align:left;
+}
+.heading_21 {
+  font-family:'Arial-BoldMT', 'Arial Bold', 'Arial';
+  font-weight:700;
+  font-style:normal;
+  font-size:24px;
+  text-align:left;
+}
+.shape {
+}
+.image1 {
+  color:#000000;
+}
+.horizontal_line {
+}
+.vertical_line {
 }
