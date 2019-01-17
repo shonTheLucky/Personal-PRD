@@ -18,6 +18,8 @@
 .link_button {
   color:#169BD5;
 }
+.image {
+}
 .heading_1 {
   font-family:'ArialMT', 'Arial';
   font-weight:bold;
@@ -103,7 +105,7 @@
 .paragraph1 {
   text-align:left;
 }
-.image {
+.image1 {
   color:#000000;
 }
 .text_field {
