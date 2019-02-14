@@ -11,9 +11,14 @@
 }
 .box_2 {
 }
+.box_3 {
+}
 .placeholder {
 }
 .button {
+}
+.primary_button {
+  color:#FFFFFF;
 }
 .link_button {
   color:#169BD5;
@@ -111,4 +116,18 @@
 .text_field {
   color:#000000;
   text-align:left;
+}
+.droplist {
+  color:#000000;
+  text-align:left;
+}
+.html_button {
+  text-align:center;
+}
+.connector {
+  color:#CCCCCC;
+}
+.flow_shape {
+}
+.table_cell {
 }
