@@ -25,220 +25,220 @@
     <div id="base" class="">
 
       <!-- Unnamed (Group) -->
-      <div id="u444" class="ax_default" data-left="59" data-top="27" data-width="934" data-height="146">
+      <div id="u497" class="ax_default" data-left="59" data-top="27" data-width="934" data-height="146">
 
         <!-- Unnamed (Rectangle) -->
-        <div id="u445" class="ax_default _文本段落">
-          <div id="u445_div" class=""></div>
-          <div id="u445_text" class="text ">
+        <div id="u498" class="ax_default _文本段落">
+          <div id="u498_div" class=""></div>
+          <div id="u498_text" class="text ">
             <p><span>&#149; 老版本安卓客户端，使用的是32位歌单ID，与新版本安卓客户端使用的64位歌单id，可以理解为2个独立的数据库</span></p><p><span>&#149; 32位歌单ID的上限约20亿，目前新ID还剩余600W，老版本安卓用户创建歌单时，会持续消耗这部分id，故而需要进行“无效id的回收”，以防止出现由于新id不够导致用户无法创建歌单</span></p>
           </div>
         </div>
 
         <!-- Unnamed (Rectangle) -->
-        <div id="u446" class="ax_default _文本段落">
-          <div id="u446_div" class=""></div>
-          <div id="u446_text" class="text ">
+        <div id="u499" class="ax_default _文本段落">
+          <div id="u499_div" class=""></div>
+          <div id="u499_text" class="text ">
             <p><span>需求背景</span></p>
           </div>
         </div>
       </div>
 
       <!-- Unnamed (Group) -->
-      <div id="u447" class="ax_default" data-left="59" data-top="212" data-width="934" data-height="146">
+      <div id="u500" class="ax_default" data-left="59" data-top="212" data-width="934" data-height="146">
 
         <!-- Unnamed (Rectangle) -->
-        <div id="u448" class="ax_default _文本段落">
-          <div id="u448_div" class=""></div>
-          <div id="u448_text" class="text ">
+        <div id="u501" class="ax_default _文本段落">
+          <div id="u501_div" class=""></div>
+          <div id="u501_text" class="text ">
             <p><span>结合目前数据分析，及历史上的处理方式，考虑有以下两种方案：</span></p><p><span>1、对“用户删除的歌单ID”进行回收</span></p><p><span>2、对“流失用户的歌单”，筛选其中无效歌单，进行回收</span></p>
           </div>
         </div>
 
         <!-- Unnamed (Rectangle) -->
-        <div id="u449" class="ax_default _文本段落">
-          <div id="u449_div" class=""></div>
-          <div id="u449_text" class="text ">
+        <div id="u502" class="ax_default _文本段落">
+          <div id="u502_div" class=""></div>
+          <div id="u502_text" class="text ">
             <p><span>方案概述</span></p>
           </div>
         </div>
       </div>
 
       <!-- Unnamed (Group) -->
-      <div id="u450" class="ax_default" data-left="62" data-top="398" data-width="934" data-height="146">
+      <div id="u503" class="ax_default" data-left="62" data-top="398" data-width="934" data-height="146">
 
         <!-- Unnamed (Rectangle) -->
-        <div id="u451" class="ax_default _文本段落">
-          <div id="u451_div" class=""></div>
-          <div id="u451_text" class="text ">
+        <div id="u504" class="ax_default _文本段落">
+          <div id="u504_div" class=""></div>
+          <div id="u504_text" class="text ">
             <p><span>目前用户新建歌单，取ID，是递增取值的，对于之前分配出去的用户id，即使用户自主删除了，也不会对相关ID进行回收。</span></p>
           </div>
         </div>
 
         <!-- Unnamed (Rectangle) -->
-        <div id="u452" class="ax_default _文本段落">
-          <div id="u452_div" class=""></div>
-          <div id="u452_text" class="text ">
+        <div id="u505" class="ax_default _文本段落">
+          <div id="u505_div" class=""></div>
+          <div id="u505_text" class="text ">
             <p><span>方案1——对用户删除的歌单的ID进行回收</span></p>
           </div>
         </div>
       </div>
 
       <!-- Unnamed (Ellipse) -->
-      <div id="u453" class="ax_default ellipse">
-        <img id="u453_img" class="img " src="images/重大问题-歌单id回收/u453.png"/>
-        <div id="u453_text" class="text ">
+      <div id="u506" class="ax_default ellipse">
+        <img id="u506_img" class="img " src="images/重大问题-歌单id回收/u506.png"/>
+        <div id="u506_text" class="text ">
           <p><span>1</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Ellipse) -->
-      <div id="u454" class="ax_default ellipse">
-        <img id="u454_img" class="img " src="images/重大问题-歌单id回收/u453.png"/>
-        <div id="u454_text" class="text ">
+      <div id="u507" class="ax_default ellipse">
+        <img id="u507_img" class="img " src="images/重大问题-歌单id回收/u506.png"/>
+        <div id="u507_text" class="text ">
           <p><span style="font-family:'ArialMT', 'Arial';">2</span><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">(删)</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Ellipse) -->
-      <div id="u455" class="ax_default ellipse">
-        <img id="u455_img" class="img " src="images/重大问题-歌单id回收/u453.png"/>
-        <div id="u455_text" class="text ">
+      <div id="u508" class="ax_default ellipse">
+        <img id="u508_img" class="img " src="images/重大问题-歌单id回收/u506.png"/>
+        <div id="u508_text" class="text ">
           <p><span>3</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Ellipse) -->
-      <div id="u456" class="ax_default ellipse">
-        <img id="u456_img" class="img " src="images/重大问题-歌单id回收/u453.png"/>
-        <div id="u456_text" class="text ">
+      <div id="u509" class="ax_default ellipse">
+        <img id="u509_img" class="img " src="images/重大问题-歌单id回收/u506.png"/>
+        <div id="u509_text" class="text ">
           <p><span style="font-family:'ArialMT', 'Arial';">4</span><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">(删)</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Ellipse) -->
-      <div id="u457" class="ax_default ellipse">
-        <img id="u457_img" class="img " src="images/重大问题-歌单id回收/u453.png"/>
-        <div id="u457_text" class="text ">
+      <div id="u510" class="ax_default ellipse">
+        <img id="u510_img" class="img " src="images/重大问题-歌单id回收/u506.png"/>
+        <div id="u510_text" class="text ">
           <p><span>5</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Ellipse) -->
-      <div id="u458" class="ax_default ellipse">
-        <img id="u458_img" class="img " src="images/重大问题-歌单id回收/u453.png"/>
-        <div id="u458_text" class="text ">
+      <div id="u511" class="ax_default ellipse">
+        <img id="u511_img" class="img " src="images/重大问题-歌单id回收/u506.png"/>
+        <div id="u511_text" class="text ">
           <p><span>6</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Ellipse) -->
-      <div id="u459" class="ax_default ellipse">
-        <img id="u459_img" class="img " src="images/重大问题-歌单id回收/u453.png"/>
-        <div id="u459_text" class="text ">
+      <div id="u512" class="ax_default ellipse">
+        <img id="u512_img" class="img " src="images/重大问题-歌单id回收/u506.png"/>
+        <div id="u512_text" class="text ">
           <p><span style="font-family:'ArialMT', 'Arial';">7</span><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">(增)</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u460" class="ax_default heading_3">
-        <div id="u460_div" class=""></div>
-        <div id="u460_text" class="text ">
+      <div id="u513" class="ax_default heading_3">
+        <div id="u513_div" class=""></div>
+        <div id="u513_text" class="text ">
           <p><span>现状</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u461" class="ax_default heading_3">
-        <div id="u461_div" class=""></div>
-        <div id="u461_text" class="text ">
+      <div id="u514" class="ax_default heading_3">
+        <div id="u514_div" class=""></div>
+        <div id="u514_text" class="text ">
           <p><span>修改为</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Ellipse) -->
-      <div id="u462" class="ax_default ellipse">
-        <img id="u462_img" class="img " src="images/重大问题-歌单id回收/u453.png"/>
-        <div id="u462_text" class="text ">
+      <div id="u515" class="ax_default ellipse">
+        <img id="u515_img" class="img " src="images/重大问题-歌单id回收/u506.png"/>
+        <div id="u515_text" class="text ">
           <p><span>1</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Ellipse) -->
-      <div id="u463" class="ax_default ellipse">
-        <img id="u463_img" class="img " src="images/重大问题-歌单id回收/u453.png"/>
-        <div id="u463_text" class="text ">
+      <div id="u516" class="ax_default ellipse">
+        <img id="u516_img" class="img " src="images/重大问题-歌单id回收/u506.png"/>
+        <div id="u516_text" class="text ">
           <p><span style="font-family:'ArialMT', 'Arial';">2</span><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">(删)</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">回收</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Ellipse) -->
-      <div id="u464" class="ax_default ellipse">
-        <img id="u464_img" class="img " src="images/重大问题-歌单id回收/u453.png"/>
-        <div id="u464_text" class="text ">
+      <div id="u517" class="ax_default ellipse">
+        <img id="u517_img" class="img " src="images/重大问题-歌单id回收/u506.png"/>
+        <div id="u517_text" class="text ">
           <p><span>3</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Ellipse) -->
-      <div id="u465" class="ax_default ellipse">
-        <img id="u465_img" class="img " src="images/重大问题-歌单id回收/u453.png"/>
-        <div id="u465_text" class="text ">
+      <div id="u518" class="ax_default ellipse">
+        <img id="u518_img" class="img " src="images/重大问题-歌单id回收/u506.png"/>
+        <div id="u518_text" class="text ">
           <p><span style="font-family:'ArialMT', 'Arial';">4</span><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">(删)</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">回收</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Ellipse) -->
-      <div id="u466" class="ax_default ellipse">
-        <img id="u466_img" class="img " src="images/重大问题-歌单id回收/u453.png"/>
-        <div id="u466_text" class="text ">
+      <div id="u519" class="ax_default ellipse">
+        <img id="u519_img" class="img " src="images/重大问题-歌单id回收/u506.png"/>
+        <div id="u519_text" class="text ">
           <p><span>5</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Ellipse) -->
-      <div id="u467" class="ax_default ellipse">
-        <img id="u467_img" class="img " src="images/重大问题-歌单id回收/u453.png"/>
-        <div id="u467_text" class="text ">
+      <div id="u520" class="ax_default ellipse">
+        <img id="u520_img" class="img " src="images/重大问题-歌单id回收/u506.png"/>
+        <div id="u520_text" class="text ">
           <p><span>6</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Ellipse) -->
-      <div id="u468" class="ax_default ellipse">
-        <img id="u468_img" class="img " src="images/重大问题-歌单id回收/u453.png"/>
-        <div id="u468_text" class="text ">
+      <div id="u521" class="ax_default ellipse">
+        <img id="u521_img" class="img " src="images/重大问题-歌单id回收/u506.png"/>
+        <div id="u521_text" class="text ">
           <p><span style="font-family:'ArialMT', 'Arial';">7</span><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">(增)</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Group) -->
-      <div id="u469" class="ax_default" data-left="62" data-top="694" data-width="906" data-height="100">
+      <div id="u522" class="ax_default" data-left="62" data-top="694" data-width="906" data-height="100">
 
         <!-- Unnamed (Rectangle) -->
-        <div id="u470" class="ax_default _文本段落">
-          <div id="u470_div" class=""></div>
-          <div id="u470_text" class="text ">
+        <div id="u523" class="ax_default _文本段落">
+          <div id="u523_div" class=""></div>
+          <div id="u523_text" class="text ">
             <p><span>修改逻辑：</span></p><p><span>1、用户新建歌单，取id的逻辑依然是保持“从现有的闲置ID中取最小ID”</span></p><p><span>2、定期对“已删除歌单的ID”进行回收，将这些ID转为“闲置ID”（第一次处理，先不做定时机制，先将历史歌单ID执行一遍回收逻辑即可）</span></p>
           </div>
         </div>
       </div>
 
       <!-- Unnamed (Group) -->
-      <div id="u471" class="ax_default" data-left="59" data-top="862" data-width="934" data-height="271">
+      <div id="u524" class="ax_default" data-left="59" data-top="862" data-width="934" data-height="271">
 
         <!-- Unnamed (Rectangle) -->
-        <div id="u472" class="ax_default _文本段落">
-          <div id="u472_div" class=""></div>
-          <div id="u472_text" class="text ">
+        <div id="u525" class="ax_default _文本段落">
+          <div id="u525_div" class=""></div>
+          <div id="u525_text" class="text ">
             <p><span>从两方面综合判断哪些歌单需要回收ID：1、用户具备已流失属性&nbsp; 2、流失用户的歌单中，有一部分有效信息少的歌单</span></p><p><span><br></span></p><p><span>1、用户流失属性——用户2年未登录酷我，则视作流失用户</span></p><p><span>2、低质歌单属性——以上这部分用户的自建歌单中，若同时符合以下条件，则视作低质歌单：</span></p><p><span>a.无歌曲</span></p><p><span>b.无标签</span></p><p><span>c.无简介</span></p><p><span><br></span></p><p><span>对于符合以上2个条件的歌单ID，进行回收。</span></p>
           </div>
         </div>
 
         <!-- Unnamed (Rectangle) -->
-        <div id="u473" class="ax_default _文本段落">
-          <div id="u473_div" class=""></div>
-          <div id="u473_text" class="text ">
+        <div id="u526" class="ax_default _文本段落">
+          <div id="u526_div" class=""></div>
+          <div id="u526_text" class="text ">
             <p><span>方案2——根据用户流失属性+歌单属性，进行回收</span></p>
           </div>
         </div>
