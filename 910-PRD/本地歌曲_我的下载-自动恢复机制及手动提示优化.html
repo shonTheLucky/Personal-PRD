@@ -1,0 +1,470 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <title>本地歌曲/我的下载-自动恢复机制及手动提示优化</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <link href="resources/css/jquery-ui-themes.css" type="text/css" rel="stylesheet"/>
+    <link href="resources/css/axure_rp_page.css" type="text/css" rel="stylesheet"/>
+    <link href="data/styles.css" type="text/css" rel="stylesheet"/>
+    <link href="files/本地歌曲_我的下载-自动恢复机制及手动提示优化/styles.css" type="text/css" rel="stylesheet"/>
+    <script src="resources/scripts/jquery-1.7.1.min.js"></script>
+    <script src="resources/scripts/jquery-ui-1.8.10.custom.min.js"></script>
+    <script src="resources/scripts/prototypePre.js"></script>
+    <script src="data/document.js"></script>
+    <script src="resources/scripts/prototypePost.js"></script>
+    <script src="files/本地歌曲_我的下载-自动恢复机制及手动提示优化/data.js"></script>
+    <script type="text/javascript">
+      $axure.utils.getTransparentGifPath = function() { return 'resources/images/transparent.gif'; };
+      $axure.utils.getOtherPath = function() { return 'resources/Other.html'; };
+      $axure.utils.getReloadPath = function() { return 'resources/reload.html'; };
+    </script>
+  </head>
+  <body>
+    <div id="base" class="">
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u478" class="ax_default heading_2">
+        <div id="u478_div" class=""></div>
+        <div id="u478_text" class="text ">
+          <p><span>需求描述</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Group) -->
+      <div id="u479" class="ax_default" data-left="50" data-top="751" data-width="990" data-height="100">
+
+        <!-- Unnamed (Rectangle) -->
+        <div id="u480" class="ax_default _文本段落">
+          <div id="u480_div" class=""></div>
+          <div id="u480_text" class="text ">
+            <p><span>&#149; 丢失歌曲的情况拆解，及后续处理方式</span></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u481" class="ax_default heading_3">
+        <div id="u481_div" class=""></div>
+        <div id="u481_text" class="text ">
+          <p><span style="font-family:'PingFangSC-Semibold', 'PingFang SC Semibold', 'PingFang SC';font-weight:600;">情况</span><span style="font-family:'Arial-BoldMT', 'Arial Bold', 'Arial';font-weight:700;">1——</span><span style="font-family:'PingFangSC-Semibold', 'PingFang SC Semibold', 'PingFang SC';font-weight:600;">有</span><span style="font-family:'Arial-BoldMT', 'Arial Bold', 'Arial';font-weight:700;">RID</span><span style="font-family:'PingFangSC-Semibold', 'PingFang SC Semibold', 'PingFang SC';font-weight:600;">，且是wifi和免流环境（自动修复）</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Group) -->
+      <div id="u482" class="ax_default" data-left="50" data-top="1766" data-width="990" data-height="200">
+
+        <!-- Unnamed (Rectangle) -->
+        <div id="u483" class="ax_default _文本段落">
+          <div id="u483_div" class=""></div>
+          <div id="u483_text" class="text ">
+            <p><span>&#149; 自动修复流程：</span></p><p><span>①、启动app或app保活→扫描我的下载/本地音乐→确认音乐文件丢失→确认有rid→确认当前免流量→后台静默下载</span></p><p><span>②、启动app或app保活→扫描我的下载/本地音乐→确认音乐文件丢失→确认没有rid→确认存在sig→确认当前免流量→后台静默下载</span></p><p><span>&#149; 处理方式：</span></p><p><span>后台静默下载</span></p><p><span>&#149; 自动修复触发时间：</span></p><p><span>打开酷我/收到酷我push被拉活时</span></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u484" class="ax_default heading_3">
+        <div id="u484_div" class=""></div>
+        <div id="u484_text" class="text ">
+          <p><span style="font-family:'PingFangSC-Semibold', 'PingFang SC Semibold', 'PingFang SC';font-weight:600;">情况</span><span style="font-family:'Arial-BoldMT', 'Arial Bold', 'Arial';font-weight:700;">2——</span><span style="font-family:'PingFangSC-Semibold', 'PingFang SC Semibold', 'PingFang SC';font-weight:600;">有RID，是普通流量环境（手动恢复）（提示优化）</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Group) -->
+      <div id="u485" class="ax_default" data-left="714" data-top="2717" data-width="990" data-height="100">
+
+        <!-- Unnamed (Rectangle) -->
+        <div id="u486" class="ax_default _文本段落">
+          <div id="u486_div" class=""></div>
+          <div id="u486_text" class="text ">
+            <p><span>&#149; 流程：</span></p><p><span>启动app→扫描我的下载/本地音乐→确认音乐文件丢失→确认有rid→确认当前是耗流量环境→展示置灰→用户点击该歌曲→左图流程</span></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Unnamed (Image) -->
+      <div id="u487" class="ax_default image">
+        <img id="u487_img" class="img " src="images/本地歌曲_我的下载-自动恢复机制及手动提示优化/u487.png"/>
+      </div>
+
+      <!-- Unnamed (Image) -->
+      <div id="u488" class="ax_default image">
+        <img id="u488_img" class="img " src="images/本地歌曲_我的下载-自动恢复机制及手动提示优化/u488.jpg"/>
+      </div>
+
+      <!-- Unnamed (Group) -->
+      <div id="u489" class="ax_default" data-left="78" data-top="2955" data-width="245" data-height="157">
+
+        <!-- Unnamed (Rectangle) -->
+        <div id="u490" class="ax_default _形状">
+          <div id="u490_div" class=""></div>
+        </div>
+
+        <!-- Unnamed (Horizontal Line) -->
+        <div id="u491" class="ax_default _水平线">
+          <img id="u491_img" class="img " src="images/本地歌曲_我的下载-自动恢复机制及手动提示优化/u491.png"/>
+        </div>
+
+        <!-- Unnamed (Vertical Line) -->
+        <div id="u492" class="ax_default _垂直线">
+          <img id="u492_img" class="img " src="images/本地歌曲_我的下载-自动恢复机制及手动提示优化/u492.png"/>
+        </div>
+
+        <!-- Unnamed (Horizontal Line) -->
+        <div id="u493" class="ax_default _水平线">
+          <img id="u493_img" class="img " src="images/本地歌曲_我的下载-自动恢复机制及手动提示优化/u491.png"/>
+        </div>
+
+        <!-- Unnamed (Vertical Line) -->
+        <div id="u494" class="ax_default _垂直线">
+          <img id="u494_img" class="img " src="images/本地歌曲_我的下载-自动恢复机制及手动提示优化/u492.png"/>
+        </div>
+
+        <!-- Unnamed (Rectangle) -->
+        <div id="u495" class="ax_default _一级标题">
+          <div id="u495_div" class=""></div>
+          <div id="u495_text" class="text ">
+            <p><span>移出列表</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Rectangle) -->
+        <div id="u496" class="ax_default _一级标题">
+          <div id="u496_div" class=""></div>
+          <div id="u496_text" class="text ">
+            <p><span>修复</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Rectangle) -->
+        <div id="u497" class="ax_default _一级标题">
+          <div id="u497_div" class=""></div>
+          <div id="u497_text" class="text ">
+            <p><span>文件损坏</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Rectangle) -->
+        <div id="u498" class="ax_default _文本段落">
+          <div id="u498_div" class=""></div>
+          <div id="u498_text" class="text ">
+            <p><span>音乐文件已损坏，修复需要2.3MB流量。</span></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u499" class="ax_default heading_3">
+        <div id="u499_div" class=""></div>
+        <div id="u499_text" class="text ">
+          <p><span style="font-family:'PingFangSC-Semibold', 'PingFang SC Semibold', 'PingFang SC';font-weight:600;">情况</span><span style="font-family:'Arial-BoldMT', 'Arial Bold', 'Arial';font-weight:700;">3——</span><span style="font-family:'PingFangSC-Semibold', 'PingFang SC Semibold', 'PingFang SC';font-weight:600;">无RID，且来源为酷狗、qq音乐等平台（提示优化）</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Group) -->
+      <div id="u500" class="ax_default" data-left="360" data-top="3591" data-width="990" data-height="120">
+
+        <!-- Unnamed (Rectangle) -->
+        <div id="u501" class="ax_default _文本段落">
+          <div id="u501_div" class=""></div>
+          <div id="u501_text" class="text ">
+            <p><span>&#149; 处理方式：</span></p><p><span>1、用户点击歌曲→dialog告知用户——该歌曲在“第三方音乐软件”中已删除（请前往对应音乐软件重新下载）</span></p><p><span>2、点击【确定】，弹框关闭，不做任何后续动作</span></p><p><span>3、点击【移出列表】，则将该数据从列表中删除</span></p><p><span><br></span></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Unnamed (Image) -->
+      <div id="u502" class="ax_default image">
+        <img id="u502_img" class="img " src="images/本地歌曲_我的下载-自动恢复机制及手动提示优化/u488.jpg"/>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u503" class="ax_default heading_3">
+        <div id="u503_div" class=""></div>
+        <div id="u503_text" class="text ">
+          <p><span style="font-family:'PingFangSC-Semibold', 'PingFang SC Semibold', 'PingFang SC';font-weight:600;">情况</span><span style="font-family:'Arial-BoldMT', 'Arial Bold', 'Arial';font-weight:700;">4——</span><span style="font-family:'PingFangSC-Semibold', 'PingFang SC Semibold', 'PingFang SC';font-weight:600;">无RID，且来自外部（提示优化）</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Group) -->
+      <div id="u504" class="ax_default" data-left="360" data-top="4316" data-width="990" data-height="100">
+
+        <!-- Unnamed (Rectangle) -->
+        <div id="u505" class="ax_default _文本段落">
+          <div id="u505_div" class=""></div>
+          <div id="u505_text" class="text ">
+            <p><span>&#149; 处理方式：</span></p><p><span>1、用户点击歌曲→dialog告知用户——该歌曲在“第三方音乐软件”中已删除（请前往对应音乐软件重新下载）</span></p><p><span>2、点击【确定】，则不做任何处理</span></p><p><span>3、点击【移出列表】，则将该数据从列表中删除</span></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Unnamed (Image) -->
+      <div id="u506" class="ax_default image">
+        <img id="u506_img" class="img " src="images/本地歌曲_我的下载-自动恢复机制及手动提示优化/u488.jpg"/>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u507" class="ax_default heading_2">
+        <div id="u507_div" class=""></div>
+        <div id="u507_text" class="text ">
+          <p><span style="font-family:'PingFangSC-Semibold', 'PingFang SC Semibold', 'PingFang SC';font-weight:600;">本地歌曲</span><span style="font-family:'Arial-BoldMT', 'Arial Bold', 'Arial';font-weight:700;">/</span><span style="font-family:'PingFangSC-Semibold', 'PingFang SC Semibold', 'PingFang SC';font-weight:600;">我的下载自动恢复机制及相关提示优化</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u508" class="ax_default heading_3">
+        <div id="u508_div" class=""></div>
+        <div id="u508_text" class="text ">
+          <p><span>优化——“指纹识别（安卓）+云盘”提高自动恢复占比（不一定能做）</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Group) -->
+      <div id="u509" class="ax_default" data-left="101" data-top="2287" data-width="990" data-height="145">
+
+        <!-- Unnamed (Rectangle) -->
+        <div id="u510" class="ax_default _文本段落">
+          <div id="u510_div" class=""></div>
+          <div id="u510_text" class="text ">
+            <p><span style="color:#999999;">&#149; 前提条件：1、安卓解码器更换完成 2、测试指纹识别算法，准确率指标超过98%</span></p><p><span style="color:#999999;">&#149; 自动替换机制：</span></p><p><span style="color:#999999;">1、在每次启动APP/push拉活时，对于检测到的</span><span style="color:#1E1E1E;">未丢失文件、且rid=0的歌曲</span><span style="color:#999999;">，进行一次指纹识别。</span></p><p><span style="color:#999999;">2、若识别到线上ID，则直接匹配线上ID。</span></p><p><span style="color:#999999;">3、若未识别到线上ID，则将该歌曲上传云盘，且记录sig。</span></p><p><span style="color:#999999;"><br></span></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Unnamed (Image) -->
+      <div id="u511" class="ax_default image">
+        <img id="u511_img" class="img " src="images/本地歌曲_我的下载-自动恢复机制及手动提示优化/u511.png"/>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u512" class="ax_default heading_2">
+        <div id="u512_div" class=""></div>
+        <div id="u512_text" class="text ">
+          <p><span>整体流程图：</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Group) -->
+      <div id="u513" class="ax_default" data-left="50" data-top="1032" data-width="990" data-height="100">
+
+        <!-- Unnamed (Rectangle) -->
+        <div id="u514" class="ax_default _文本段落">
+          <div id="u514_div" class=""></div>
+          <div id="u514_text" class="text ">
+            <p><span>注：流程图中置灰部分为——指纹识别自动化、云盘自动保存两块逻辑</span></p><p><span>需要考虑本期工作量能否吃下</span></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Unnamed (Group) -->
+      <div id="u515" class="ax_default" data-left="73" data-top="3721" data-width="245" data-height="157">
+
+        <!-- Unnamed (Rectangle) -->
+        <div id="u516" class="ax_default _形状">
+          <div id="u516_div" class=""></div>
+        </div>
+
+        <!-- Unnamed (Horizontal Line) -->
+        <div id="u517" class="ax_default _水平线">
+          <img id="u517_img" class="img " src="images/本地歌曲_我的下载-自动恢复机制及手动提示优化/u491.png"/>
+        </div>
+
+        <!-- Unnamed (Vertical Line) -->
+        <div id="u518" class="ax_default _垂直线">
+          <img id="u518_img" class="img " src="images/本地歌曲_我的下载-自动恢复机制及手动提示优化/u492.png"/>
+        </div>
+
+        <!-- Unnamed (Horizontal Line) -->
+        <div id="u519" class="ax_default _水平线">
+          <img id="u519_img" class="img " src="images/本地歌曲_我的下载-自动恢复机制及手动提示优化/u491.png"/>
+        </div>
+
+        <!-- Unnamed (Vertical Line) -->
+        <div id="u520" class="ax_default _垂直线">
+          <img id="u520_img" class="img " src="images/本地歌曲_我的下载-自动恢复机制及手动提示优化/u492.png"/>
+        </div>
+
+        <!-- Unnamed (Rectangle) -->
+        <div id="u521" class="ax_default _一级标题">
+          <div id="u521_div" class=""></div>
+          <div id="u521_text" class="text ">
+            <p><span>移出列表</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Rectangle) -->
+        <div id="u522" class="ax_default _一级标题">
+          <div id="u522_div" class=""></div>
+          <div id="u522_text" class="text ">
+            <p><span>确定</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Rectangle) -->
+        <div id="u523" class="ax_default _一级标题">
+          <div id="u523_div" class=""></div>
+          <div id="u523_text" class="text ">
+            <p><span>提示</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Rectangle) -->
+        <div id="u524" class="ax_default _文本段落">
+          <div id="u524_div" class=""></div>
+          <div id="u524_text" class="text ">
+            <p style="font-size:15px;"><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">该歌曲在</span><span style="font-family:'ArialMT', 'Arial';">“</span><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">第三方音乐软件</span><span style="font-family:'ArialMT', 'Arial';">”</span><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">中已删除。</span></p><p style="font-size:11px;"><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">（请前往对应音乐软件重新下载）</span></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Unnamed (Group) -->
+      <div id="u525" class="ax_default" data-left="78" data-top="4450" data-width="245" data-height="157">
+
+        <!-- Unnamed (Rectangle) -->
+        <div id="u526" class="ax_default _形状">
+          <div id="u526_div" class=""></div>
+        </div>
+
+        <!-- Unnamed (Horizontal Line) -->
+        <div id="u527" class="ax_default _水平线">
+          <img id="u527_img" class="img " src="images/本地歌曲_我的下载-自动恢复机制及手动提示优化/u491.png"/>
+        </div>
+
+        <!-- Unnamed (Vertical Line) -->
+        <div id="u528" class="ax_default _垂直线">
+          <img id="u528_img" class="img " src="images/本地歌曲_我的下载-自动恢复机制及手动提示优化/u492.png"/>
+        </div>
+
+        <!-- Unnamed (Horizontal Line) -->
+        <div id="u529" class="ax_default _水平线">
+          <img id="u529_img" class="img " src="images/本地歌曲_我的下载-自动恢复机制及手动提示优化/u491.png"/>
+        </div>
+
+        <!-- Unnamed (Vertical Line) -->
+        <div id="u530" class="ax_default _垂直线">
+          <img id="u530_img" class="img " src="images/本地歌曲_我的下载-自动恢复机制及手动提示优化/u492.png"/>
+        </div>
+
+        <!-- Unnamed (Rectangle) -->
+        <div id="u531" class="ax_default _一级标题">
+          <div id="u531_div" class=""></div>
+          <div id="u531_text" class="text ">
+            <p><span>移出列表</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Rectangle) -->
+        <div id="u532" class="ax_default _一级标题">
+          <div id="u532_div" class=""></div>
+          <div id="u532_text" class="text ">
+            <p><span>确定</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Rectangle) -->
+        <div id="u533" class="ax_default _一级标题">
+          <div id="u533_div" class=""></div>
+          <div id="u533_text" class="text ">
+            <p><span>提示</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Rectangle) -->
+        <div id="u534" class="ax_default _文本段落">
+          <div id="u534_div" class=""></div>
+          <div id="u534_text" class="text ">
+            <p style="font-size:15px;"><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">该歌曲在</span><span style="font-family:'ArialMT', 'Arial';">“</span><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">第三方音乐软件</span><span style="font-family:'ArialMT', 'Arial';">”</span><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">中已删除。</span></p><p style="font-size:11px;"><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">（请前往对应音乐软件重新下载）</span></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u535" class="ax_default heading_2">
+        <div id="u535_div" class=""></div>
+        <div id="u535_text" class="text ">
+          <p><span>提示优化：</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Image) -->
+      <div id="u536" class="ax_default image">
+        <img id="u536_img" class="img " src="images/本地歌曲_我的下载-自动恢复机制及手动提示优化/u536.jpg"/>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u537" class="ax_default box_3">
+        <div id="u537_div" class=""></div>
+        <div id="u537_text" class="text ">
+          <p><span>修复中，请保持网络畅通</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Group) -->
+      <div id="u538" class="ax_default" data-left="50" data-top="1975" data-width="990" data-height="64">
+
+        <!-- Unnamed (Rectangle) -->
+        <div id="u539" class="ax_default _文本段落">
+          <div id="u539_div" class=""></div>
+          <div id="u539_text" class="text ">
+            <p><span>&#149; 付费歌曲处理：</span></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Unnamed (Image) -->
+      <div id="u540" class="ax_default image">
+        <img id="u540_img" class="img " src="images/本地歌曲_我的下载-自动恢复机制及手动提示优化/u540.png"/>
+      </div>
+
+      <!-- Unnamed (Group) -->
+      <div id="u541" class="ax_default" data-left="714" data-top="2817" data-width="990" data-height="100">
+
+        <!-- Unnamed (Rectangle) -->
+        <div id="u542" class="ax_default _文本段落">
+          <div id="u542_div" class=""></div>
+          <div id="u542_text" class="text ">
+            <p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;color:#999999;">&#149; 处理方式：</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;color:#999999;">1、用户点击歌曲→dialog告知用户“音乐文件损坏，需要修复，预计需要xxx流量”</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;color:#999999;">2、若点击【修复】，则</span><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;color:#000000;">按照用户原有的音质</span><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;color:#999999;">，直接后台走下载流程，同时</span><span style="font-family:'PingFangSC-Semibold', 'PingFang SC Semibold', 'PingFang SC';font-weight:600;color:#000000;">toast</span><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;color:#999999;">提示——修复中，请保持网络畅通</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;color:#999999;">3、若点击【移出列表】，则将该歌曲从列表中删除</span></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Unnamed (Group) -->
+      <div id="u543" class="ax_default" data-left="360" data-top="3491" data-width="990" data-height="100">
+
+        <!-- Unnamed (Rectangle) -->
+        <div id="u544" class="ax_default _文本段落">
+          <div id="u544_div" class=""></div>
+          <div id="u544_text" class="text ">
+            <p><span>&#149; 流程：</span></p><p><span>启动app→扫描我的下载/本地音乐→确认音乐文件丢失→确认没有rid→确认没有sig→展示置灰→用户点击该歌曲→左图流程</span></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Unnamed (Group) -->
+      <div id="u545" class="ax_default" data-left="360" data-top="4216" data-width="990" data-height="100">
+
+        <!-- Unnamed (Rectangle) -->
+        <div id="u546" class="ax_default _文本段落">
+          <div id="u546_div" class=""></div>
+          <div id="u546_text" class="text ">
+            <p><span>&#149; 流程：</span></p><p><span>启动app→扫描我的下载/本地音乐→确认音乐文件丢失→确认没有rid→确认没有sig→展示置灰→用户点击该歌曲→左图流程</span></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Unnamed (Group) -->
+      <div id="u547" class="ax_default" data-left="360" data-top="4071" data-width="990" data-height="100">
+
+        <!-- Unnamed (Rectangle) -->
+        <div id="u548" class="ax_default _文本段落">
+          <div id="u548_div" class=""></div>
+          <div id="u548_text" class="text ">
+            <p><span>！！！情况3和情况4处理成一样的流程</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
