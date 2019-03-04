@@ -189,13 +189,13 @@
       </div>
 
       <!-- Unnamed (Group) -->
-      <div id="u26" class="ax_default" data-left="412" data-top="335" data-width="560" data-height="319">
+      <div id="u26" class="ax_default" data-left="412" data-top="335" data-width="560" data-height="369">
 
         <!-- Unnamed (Rectangle) -->
         <div id="u27" class="ax_default paragraph1">
           <div id="u27_div" class=""></div>
           <div id="u27_text" class="text ">
-            <p><span>&#149; 展示内容</span></p><p><span>1、顶部活动玩法，文字描述活动的玩法介绍；</span></p><p><span>2、下半部分主播翻牌，默认展示牌的背面，背面只有几个文字描述，点击牌，则牌翻到正面，然后开始播放对应的主播电台节目</span></p><p><span>&#149; 交互</span></p><p><span>点击某张卡片A，则出现翻牌的动效，牌的背面是对应主播电台节目的信息，且同时开始播放该电台音频。</span></p><p><span>再次点击A牌面，则重新加载该歌曲。</span></p><p><span>点击B卡牌，则原A卡牌翻回正面，B卡牌翻到背面，且开始播放B歌。</span></p><p><span><br></span></p><p><span>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 各种交互见右边图示→</span></p>
+            <p><span>&#149; 展示内容</span></p><p><span>1、顶部活动玩法，文字描述活动的玩法介绍；</span></p><p><span>2、主播翻牌，默认展示牌的正面，正面只有几个固定的文字描述，点击牌，则牌翻到背面，且开始播放对应的主播电台节目，背面展示的是电台名，歌手信息。</span></p><p><span>&#149; 交互</span></p><p><span>点击某张卡片A，则出现翻牌的动效，牌的背面是对应主播电台节目的信息，且同时开始播放该电台音频。</span></p><p><span>再次点击A牌面，则从头播放该歌曲。</span></p><p><span>换到点击B卡牌，则原A卡牌翻回正面，B卡牌翻到背面，且开始播放B歌。</span></p><p><span><br></span></p><p><span>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 各种交互见右边图示→</span></p>
           </div>
         </div>
 
@@ -215,7 +215,7 @@
         <div id="u30" class="ax_default paragraph1">
           <div id="u30_div" class=""></div>
           <div id="u30_text" class="text ">
-            <p><span>展示内容：抽奖规则入口、中奖纪录滚动牌、大转盘</span></p><p><span>&#149; 中奖纪录滚动牌：不需要实时，每小时内将新增数据插入一部分到队列中，50条数据滚动展示即可.</span></p><p><span>&#149; 大转盘抽奖：</span></p><p><span>未中奖则弹出dialog，引导用户去听特定的N个音频；</span></p><p><span>中奖了，则弹框收集用户收件名、地址、手机号、并将相关数据存在后端，运营后期统一发放礼物</span></p><p><span><br></span></p><p><span>&#149; 中奖逻辑</span></p><p><span>1、运营提供奖品的商品种类，及相对应的sku，及商品属性（虚拟还是实物奖品）</span></p><p><span>2、设定每N次抽奖会吐出一个奖品，具体什么奖品，根据剩余sku随机得到。记录下用户确认了收奖信息后，对应商品剩余sku-1.</span></p><p><span>3、其余抽奖结果，均返回未中奖的弹框。</span></p><p><span><br></span></p><p><span><br></span></p><p><span><br></span></p>
+            <p><span>展示内容：抽奖规则入口、中奖纪录滚动牌、大转盘</span></p><p><span>&#149; 中奖纪录滚动牌：不需要实时，每小时内将新增数据插入一部分到队列中，50条数据滚动展示即可.</span></p><p><span>&#149; 大转盘抽奖：</span></p><p><span>未中奖则弹出dialog，引导用户去听特定的N个音频；</span></p><p><span>中奖了，则弹框收集用户收件名、地址、手机号、并将相关数据存在后端，运营后期统一发放礼物</span></p><p><span><br></span></p><p><span>&#149; 中奖逻辑</span></p><p><span>1、运营提供奖品的商品种类，及相对应的sku，及商品属性（虚拟还是实物奖品）</span></p><p><span>2、设定每N次抽奖会吐出一个奖品，具体什么奖品，根据剩余sku随机率得到。后端记录下用户确认了收奖信息后，对应商品剩余sku-1.</span></p><p><span>3、其余抽奖结果，均返回未中奖的弹框。</span></p><p><span><br></span></p><p><span><br></span></p><p><span><br></span></p>
           </div>
         </div>
 
@@ -229,13 +229,13 @@
       </div>
 
       <!-- Unnamed (Group) -->
-      <div id="u32" class="ax_default" data-left="412" data-top="1294" data-width="562" data-height="146">
+      <div id="u32" class="ax_default" data-left="43" data-top="1622" data-width="562" data-height="146">
 
         <!-- Unnamed (Rectangle) -->
         <div id="u33" class="ax_default paragraph1">
           <div id="u33_div" class=""></div>
           <div id="u33_text" class="text ">
-            <p><span style="font-family:'ArialMT', 'Arial';">1</span><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">、玩法规则弹框：点击后出弹框，展示一大堆文字+关闭按钮</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">2、抽奖弹框2个</span></p>
+            <p><span>抽奖弹框共2个</span></p>
           </div>
         </div>
 
@@ -262,7 +262,7 @@
       </div>
 
       <!-- Unnamed (Group) -->
-      <div id="u37" class="ax_default" data-left="783" data-top="1745" data-width="263" data-height="40">
+      <div id="u37" class="ax_default" data-left="414" data-top="2050" data-width="263" data-height="40">
 
         <!-- Unnamed (Rectangle) -->
         <div id="u38" class="ax_default shape">
@@ -342,10 +342,10 @@
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u49" class="ax_default box_3">
+      <div id="u49" class="ax_default paragraph">
         <div id="u49_div" class=""></div>
         <div id="u49_text" class="text ">
-          <p><span>我要倾述</span></p>
+          <p style="font-size:20px;text-align:center;"><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">活动玩法：</span></p><p style="font-size:13px;text-align:left;"><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">1、在下方评论区</span><span style="font-family:'ArialMT', 'Arial';"> @</span><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">你要告白的主播</span><span style="font-family:'ArialMT', 'Arial';"> </span><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">并留下你想要跟对方说的话。</span></p><p style="font-size:13px;text-align:left;"><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">2、活动结束后，主播将选出最喜欢的告白，送上</span><span style="font-family:'ArialMT', 'Arial';">CIGA LONG</span><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">设计师珠宝一份以及主播亲笔签名回信。</span></p>
         </div>
       </div>
 
@@ -353,15 +353,15 @@
       <div id="u50" class="ax_default paragraph">
         <div id="u50_div" class=""></div>
         <div id="u50_text" class="text ">
-          <p style="font-size:20px;text-align:center;"><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">活动玩法：</span></p><p style="font-size:13px;text-align:left;"><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">1、在下方评论区</span><span style="font-family:'ArialMT', 'Arial';"> @</span><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">你要告白的主播</span><span style="font-family:'ArialMT', 'Arial';"> </span><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">并留下你想要跟对方说的话。</span></p><p style="font-size:13px;text-align:left;"><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">2、活动结束后，主播将选出最喜欢的告白，送上</span><span style="font-family:'ArialMT', 'Arial';">CIGA LONG</span><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">设计师珠宝一份以及主播亲笔签名回信。</span></p>
+          <p><span>主播翻牌：</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u51" class="ax_default box_3">
+      <div id="u51" class="ax_default box_1">
         <div id="u51_div" class=""></div>
         <div id="u51_text" class="text ">
-          <p><span>我要告白</span></p>
+          <p><span>评论区</span></p>
         </div>
       </div>
 
@@ -369,113 +369,113 @@
       <div id="u52" class="ax_default box_3">
         <div id="u52_div" class=""></div>
         <div id="u52_text" class="text ">
-          <p><span>我要倾述</span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (Rectangle) -->
-      <div id="u53" class="ax_default paragraph">
-        <div id="u53_div" class=""></div>
-        <div id="u53_text" class="text ">
-          <p><span>主播翻牌：</span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (Rectangle) -->
-      <div id="u54" class="ax_default box_1">
-        <div id="u54_div" class=""></div>
-        <div id="u54_text" class="text ">
-          <p><span>评论区</span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (Rectangle) -->
-      <div id="u55" class="ax_default box_3">
-        <div id="u55_div" class=""></div>
-        <div id="u55_text" class="text ">
           <p><span>我要告白</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u56" class="ax_default label">
-        <div id="u56_div" class=""></div>
-        <div id="u56_text" class="text ">
+      <div id="u53" class="ax_default label">
+        <div id="u53_div" class=""></div>
+        <div id="u53_text" class="text ">
           <p><span>这是正面</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u57" class="ax_default box_3">
-        <div id="u57_div" class=""></div>
-        <div id="u57_text" class="text ">
+      <div id="u54" class="ax_default box_3">
+        <div id="u54_div" class=""></div>
+        <div id="u54_text" class="text ">
           <p><span>《电台节目名》</span></p><p><span>电台作者</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u58" class="ax_default label">
-        <div id="u58_div" class=""></div>
-        <div id="u58_text" class="text ">
+      <div id="u55" class="ax_default label">
+        <div id="u55_div" class=""></div>
+        <div id="u55_text" class="text ">
           <p><span>这是背面</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u59" class="ax_default heading_3">
-        <div id="u59_div" class=""></div>
-        <div id="u59_text" class="text ">
+      <div id="u56" class="ax_default heading_3">
+        <div id="u56_div" class=""></div>
+        <div id="u56_text" class="text ">
           <p><span style="font-family:'Arial-BoldMT', 'Arial Bold', 'Arial';font-weight:700;">A</span><span style="font-family:'PingFangSC-Semibold', 'PingFang SC Semibold', 'PingFang SC';font-weight:600;">卡牌</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u60" class="ax_default heading_3">
-        <div id="u60_div" class=""></div>
-        <div id="u60_text" class="text ">
+      <div id="u57" class="ax_default heading_3">
+        <div id="u57_div" class=""></div>
+        <div id="u57_text" class="text ">
           <p><span style="font-family:'Arial-BoldMT', 'Arial Bold', 'Arial';font-weight:700;">A</span><span style="font-family:'PingFangSC-Semibold', 'PingFang SC Semibold', 'PingFang SC';font-weight:600;">卡牌</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Group) -->
-      <div id="u61" class="ax_default" data-left="1193" data-top="415" data-width="55" data-height="55">
+      <div id="u58" class="ax_default" data-left="1193" data-top="415" data-width="55" data-height="55">
 
         <!-- Unnamed (Image) -->
-        <div id="u62" class="ax_default _图片">
-          <img id="u62_img" class="img " src="images/h5-白色情人节/u62.png"/>
+        <div id="u59" class="ax_default _图片">
+          <img id="u59_img" class="img " src="images/h5-白色情人节/u59.png"/>
         </div>
 
         <!-- Unnamed (Rectangle) -->
-        <div id="u63" class="ax_default _二级标题">
-          <div id="u63_div" class=""></div>
-          <div id="u63_text" class="text ">
+        <div id="u60" class="ax_default _二级标题">
+          <div id="u60_div" class=""></div>
+          <div id="u60_text" class="text ">
             <p><span style="font-family:'STHeitiSC-Medium', 'Heiti SC Medium', 'Heiti SC';font-weight:700;">点击</span></p>
           </div>
         </div>
       </div>
 
       <!-- Unnamed (Connector) -->
-      <div id="u64" class="ax_default connector">
-        <img id="u64_seg0" class="img " src="images/h5-白色情人节/u64_seg0.png" alt="u64_seg0"/>
-        <img id="u64_seg1" class="img " src="images/h5-白色情人节/u64_seg1.png" alt="u64_seg1"/>
-        <div id="u64_text" class="text " style="display:none; visibility: hidden">
+      <div id="u61" class="ax_default connector">
+        <img id="u61_seg0" class="img " src="images/h5-白色情人节/u61_seg0.png" alt="u61_seg0"/>
+        <img id="u61_seg1" class="img " src="images/h5-白色情人节/u61_seg1.png" alt="u61_seg1"/>
+        <div id="u61_text" class="text " style="display:none; visibility: hidden">
           <p></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u65" class="ax_default box_3">
-        <div id="u65_div" class=""></div>
-        <div id="u65_text" class="text ">
+      <div id="u62" class="ax_default box_3">
+        <div id="u62_div" class=""></div>
+        <div id="u62_text" class="text ">
           <p><span>正面</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u66" class="ax_default box_3">
+      <div id="u63" class="ax_default box_3">
+        <div id="u63_div" class=""></div>
+        <div id="u63_text" class="text ">
+          <p><span>正面</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u64" class="ax_default heading_3">
+        <div id="u64_div" class=""></div>
+        <div id="u64_text" class="text ">
+          <p><span style="font-family:'Arial-BoldMT', 'Arial Bold', 'Arial';font-weight:700;">A</span><span style="font-family:'PingFangSC-Semibold', 'PingFang SC Semibold', 'PingFang SC';font-weight:600;">卡牌</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u65" class="ax_default heading_3">
+        <div id="u65_div" class=""></div>
+        <div id="u65_text" class="text ">
+          <p><span style="font-family:'Arial-BoldMT', 'Arial Bold', 'Arial';font-weight:700;">B</span><span style="font-family:'PingFangSC-Semibold', 'PingFang SC Semibold', 'PingFang SC';font-weight:600;">卡牌</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u66" class="ax_default heading_3">
         <div id="u66_div" class=""></div>
         <div id="u66_text" class="text ">
-          <p><span>正面</span></p>
+          <p><span>点击单张卡牌</span></p><p><span>时的交互</span></p>
         </div>
       </div>
 
@@ -483,209 +483,233 @@
       <div id="u67" class="ax_default heading_3">
         <div id="u67_div" class=""></div>
         <div id="u67_text" class="text ">
-          <p><span style="font-family:'Arial-BoldMT', 'Arial Bold', 'Arial';font-weight:700;">A</span><span style="font-family:'PingFangSC-Semibold', 'PingFang SC Semibold', 'PingFang SC';font-weight:600;">卡牌</span></p>
+          <p><span>点了A卡，再点</span></p><p><span>B卡 交互</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u68" class="ax_default heading_3">
+      <div id="u68" class="ax_default box_1">
         <div id="u68_div" class=""></div>
-        <div id="u68_text" class="text ">
-          <p><span style="font-family:'Arial-BoldMT', 'Arial Bold', 'Arial';font-weight:700;">B</span><span style="font-family:'PingFangSC-Semibold', 'PingFang SC Semibold', 'PingFang SC';font-weight:600;">卡牌</span></p>
-        </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u69" class="ax_default heading_3">
+      <div id="u69" class="ax_default box_3">
         <div id="u69_div" class=""></div>
         <div id="u69_text" class="text ">
-          <p><span>点击单张卡牌</span></p><p><span>时的交互</span></p>
+          <p><span>背面</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u70" class="ax_default heading_3">
+      <div id="u70" class="ax_default box_3">
         <div id="u70_div" class=""></div>
         <div id="u70_text" class="text ">
-          <p><span>切换点击某卡</span></p><p><span>牌时，其它卡</span></p><p><span>牌的交互</span></p>
+          <p><span>正面</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u71" class="ax_default box_1">
+      <div id="u71" class="ax_default heading_3">
         <div id="u71_div" class=""></div>
+        <div id="u71_text" class="text ">
+          <p><span style="font-family:'Arial-BoldMT', 'Arial Bold', 'Arial';font-weight:700;">A</span><span style="font-family:'PingFangSC-Semibold', 'PingFang SC Semibold', 'PingFang SC';font-weight:600;">卡牌</span></p>
+        </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u72" class="ax_default box_3">
+      <div id="u72" class="ax_default heading_3">
         <div id="u72_div" class=""></div>
         <div id="u72_text" class="text ">
-          <p><span>背面</span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (Rectangle) -->
-      <div id="u73" class="ax_default box_3">
-        <div id="u73_div" class=""></div>
-        <div id="u73_text" class="text ">
-          <p><span>正面</span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (Rectangle) -->
-      <div id="u74" class="ax_default heading_3">
-        <div id="u74_div" class=""></div>
-        <div id="u74_text" class="text ">
-          <p><span style="font-family:'Arial-BoldMT', 'Arial Bold', 'Arial';font-weight:700;">A</span><span style="font-family:'PingFangSC-Semibold', 'PingFang SC Semibold', 'PingFang SC';font-weight:600;">卡牌</span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (Rectangle) -->
-      <div id="u75" class="ax_default heading_3">
-        <div id="u75_div" class=""></div>
-        <div id="u75_text" class="text ">
           <p><span style="font-family:'Arial-BoldMT', 'Arial Bold', 'Arial';font-weight:700;">B</span><span style="font-family:'PingFangSC-Semibold', 'PingFang SC Semibold', 'PingFang SC';font-weight:600;">卡牌</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Group) -->
-      <div id="u76" class="ax_default" data-left="1517" data-top="660" data-width="55" data-height="55">
+      <div id="u73" class="ax_default" data-left="1517" data-top="660" data-width="55" data-height="55">
 
         <!-- Unnamed (Image) -->
-        <div id="u77" class="ax_default _图片">
-          <img id="u77_img" class="img " src="images/h5-白色情人节/u62.png"/>
+        <div id="u74" class="ax_default _图片">
+          <img id="u74_img" class="img " src="images/h5-白色情人节/u59.png"/>
         </div>
 
         <!-- Unnamed (Rectangle) -->
-        <div id="u78" class="ax_default _二级标题">
-          <div id="u78_div" class=""></div>
-          <div id="u78_text" class="text ">
+        <div id="u75" class="ax_default _二级标题">
+          <div id="u75_div" class=""></div>
+          <div id="u75_text" class="text ">
             <p><span style="font-family:'STHeitiSC-Medium', 'Heiti SC Medium', 'Heiti SC';font-weight:700;">点击</span></p>
           </div>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u79" class="ax_default box_1">
-        <div id="u79_div" class=""></div>
+      <div id="u76" class="ax_default box_1">
+        <div id="u76_div" class=""></div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u80" class="ax_default box_3">
+      <div id="u77" class="ax_default box_3">
+        <div id="u77_div" class=""></div>
+        <div id="u77_text" class="text ">
+          <p><span>翻回到</span></p><p><span>正面</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u78" class="ax_default box_3">
+        <div id="u78_div" class=""></div>
+        <div id="u78_text" class="text ">
+          <p><span>背面</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u79" class="ax_default heading_3">
+        <div id="u79_div" class=""></div>
+        <div id="u79_text" class="text ">
+          <p><span style="font-family:'Arial-BoldMT', 'Arial Bold', 'Arial';font-weight:700;">A</span><span style="font-family:'PingFangSC-Semibold', 'PingFang SC Semibold', 'PingFang SC';font-weight:600;">卡牌</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u80" class="ax_default heading_3">
         <div id="u80_div" class=""></div>
         <div id="u80_text" class="text ">
-          <p><span>正面</span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (Rectangle) -->
-      <div id="u81" class="ax_default box_3">
-        <div id="u81_div" class=""></div>
-        <div id="u81_text" class="text ">
-          <p><span>背面</span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (Rectangle) -->
-      <div id="u82" class="ax_default heading_3">
-        <div id="u82_div" class=""></div>
-        <div id="u82_text" class="text ">
-          <p><span style="font-family:'Arial-BoldMT', 'Arial Bold', 'Arial';font-weight:700;">A</span><span style="font-family:'PingFangSC-Semibold', 'PingFang SC Semibold', 'PingFang SC';font-weight:600;">卡牌</span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (Rectangle) -->
-      <div id="u83" class="ax_default heading_3">
-        <div id="u83_div" class=""></div>
-        <div id="u83_text" class="text ">
           <p><span style="font-family:'Arial-BoldMT', 'Arial Bold', 'Arial';font-weight:700;">B</span><span style="font-family:'PingFangSC-Semibold', 'PingFang SC Semibold', 'PingFang SC';font-weight:600;">卡牌</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Group) -->
-      <div id="u84" class="ax_default" data-left="1986" data-top="660" data-width="55" data-height="55">
+      <div id="u81" class="ax_default" data-left="1986" data-top="660" data-width="55" data-height="55">
 
         <!-- Unnamed (Image) -->
-        <div id="u85" class="ax_default _图片">
-          <img id="u85_img" class="img " src="images/h5-白色情人节/u62.png"/>
+        <div id="u82" class="ax_default _图片">
+          <img id="u82_img" class="img " src="images/h5-白色情人节/u59.png"/>
         </div>
 
         <!-- Unnamed (Rectangle) -->
-        <div id="u86" class="ax_default _二级标题">
-          <div id="u86_div" class=""></div>
-          <div id="u86_text" class="text ">
+        <div id="u83" class="ax_default _二级标题">
+          <div id="u83_div" class=""></div>
+          <div id="u83_text" class="text ">
             <p><span style="font-family:'STHeitiSC-Medium', 'Heiti SC Medium', 'Heiti SC';font-weight:700;">点击</span></p>
           </div>
         </div>
       </div>
 
       <!-- Unnamed (Connector) -->
-      <div id="u87" class="ax_default connector">
-        <img id="u87_seg0" class="img " src="images/h5-白色情人节/u87_seg0.png" alt="u87_seg0"/>
-        <img id="u87_seg1" class="img " src="images/h5-白色情人节/u64_seg1.png" alt="u87_seg1"/>
-        <div id="u87_text" class="text " style="display:none; visibility: hidden">
+      <div id="u84" class="ax_default connector">
+        <img id="u84_seg0" class="img " src="images/h5-白色情人节/u84_seg0.png" alt="u84_seg0"/>
+        <img id="u84_seg1" class="img " src="images/h5-白色情人节/u61_seg1.png" alt="u84_seg1"/>
+        <div id="u84_text" class="text " style="display:none; visibility: hidden">
           <p></p>
         </div>
       </div>
 
       <!-- Unnamed (Connector) -->
-      <div id="u88" class="ax_default connector">
-        <img id="u88_seg0" class="img " src="images/h5-白色情人节/u88_seg0.png" alt="u88_seg0"/>
-        <img id="u88_seg1" class="img " src="images/h5-白色情人节/u64_seg1.png" alt="u88_seg1"/>
-        <div id="u88_text" class="text " style="display:none; visibility: hidden">
+      <div id="u85" class="ax_default connector">
+        <img id="u85_seg0" class="img " src="images/h5-白色情人节/u85_seg0.png" alt="u85_seg0"/>
+        <img id="u85_seg1" class="img " src="images/h5-白色情人节/u61_seg1.png" alt="u85_seg1"/>
+        <div id="u85_text" class="text " style="display:none; visibility: hidden">
           <p></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u89" class="ax_default label">
-        <div id="u89_div" class=""></div>
-        <div id="u89_text" class="text ">
+      <div id="u86" class="ax_default label">
+        <div id="u86_div" class=""></div>
+        <div id="u86_text" class="text ">
           <p style="font-size:20px;"><span>抽奖</span></p><p style="font-size:13px;"><span>（3次）</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u90" class="ax_default shape">
-        <div id="u90_div" class=""></div>
-        <div id="u90_text" class="text ">
+      <div id="u87" class="ax_default shape">
+        <div id="u87_div" class=""></div>
+        <div id="u87_text" class="text ">
           <p><span>邀请您收听</span></p><p><span>《xxx电台》</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Image) -->
-      <div id="u91" class="ax_default image1">
-        <img id="u91_img" class="img " src="images/h5-白色情人节/u36.png"/>
+      <div id="u88" class="ax_default image1">
+        <img id="u88_img" class="img " src="images/h5-白色情人节/u36.png"/>
       </div>
 
       <!-- Unnamed (Group) -->
-      <div id="u92" class="ax_default" data-left="419" data-top="1750" data-width="263" data-height="40">
+      <div id="u89" class="ax_default" data-left="50" data-top="2055" data-width="263" data-height="40">
 
         <!-- Unnamed (Rectangle) -->
-        <div id="u93" class="ax_default shape">
-          <div id="u93_div" class=""></div>
+        <div id="u90" class="ax_default shape">
+          <div id="u90_div" class=""></div>
         </div>
 
         <!-- Unnamed (Rectangle) -->
-        <div id="u94" class="ax_default heading_11">
-          <div id="u94_div" class=""></div>
-          <div id="u94_text" class="text ">
+        <div id="u91" class="ax_default heading_11">
+          <div id="u91_div" class=""></div>
+          <div id="u91_text" class="text ">
             <p><span>提交</span></p>
           </div>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u95" class="ax_default label">
-        <div id="u95_div" class=""></div>
-        <div id="u95_text" class="text ">
+      <div id="u92" class="ax_default label">
+        <div id="u92_div" class=""></div>
+        <div id="u92_text" class="text ">
           <p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">很遗憾这次没中奖，</span><span style="font-family:'ArialMT', 'Arial';">xxx</span><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">主播给你献上</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">祝福，下次一定中奖！</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Image) -->
-      <div id="u96" class="ax_default image">
-        <img id="u96_img" class="img " src="images/h5-白色情人节/u96.png"/>
+      <div id="u93" class="ax_default image">
+        <img id="u93_img" class="img " src="images/h5-白色情人节/u93.png"/>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u94" class="ax_default box_3">
+        <div id="u94_div" class=""></div>
+        <div id="u94_text" class="text ">
+          <p><span>我要告白</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u95" class="ax_default box_3">
+        <div id="u95_div" class=""></div>
+        <div id="u95_text" class="text ">
+          <p><span>我要告白</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u96" class="ax_default box_3">
+        <div id="u96_div" class=""></div>
+        <div id="u96_text" class="text ">
+          <p><span>我要告白</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u97" class="ax_default box_3">
+        <div id="u97_div" class=""></div>
+        <div id="u97_text" class="text ">
+          <p><span>我要告白</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u98" class="ax_default box_3">
+        <div id="u98_div" class=""></div>
+        <div id="u98_text" class="text ">
+          <p><span>我要告白</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u99" class="ax_default primary_button">
+        <div id="u99_div" class=""></div>
+        <div id="u99_text" class="text ">
+          <p><span>去告白</span></p>
+        </div>
       </div>
     </div>
   </body>
