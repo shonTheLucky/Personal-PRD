@@ -50,6 +50,7 @@
 }
 .paragraph {
   text-align:left;
+  line-height:20px;
 }
 .connector {
   color:#CCCCCC;
