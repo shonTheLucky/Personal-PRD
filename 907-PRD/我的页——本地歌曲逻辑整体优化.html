@@ -1,0 +1,306 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <title>我的页——本地歌曲逻辑整体优化</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <link href="resources/css/jquery-ui-themes.css" type="text/css" rel="stylesheet"/>
+    <link href="resources/css/axure_rp_page.css" type="text/css" rel="stylesheet"/>
+    <link href="data/styles.css" type="text/css" rel="stylesheet"/>
+    <link href="files/我的页——本地歌曲逻辑整体优化/styles.css" type="text/css" rel="stylesheet"/>
+    <script src="resources/scripts/jquery-1.7.1.min.js"></script>
+    <script src="resources/scripts/jquery-ui-1.8.10.custom.min.js"></script>
+    <script src="resources/scripts/prototypePre.js"></script>
+    <script src="data/document.js"></script>
+    <script src="resources/scripts/prototypePost.js"></script>
+    <script src="files/我的页——本地歌曲逻辑整体优化/data.js"></script>
+    <script type="text/javascript">
+      $axure.utils.getTransparentGifPath = function() { return 'resources/images/transparent.gif'; };
+      $axure.utils.getOtherPath = function() { return 'resources/Other.html'; };
+      $axure.utils.getReloadPath = function() { return 'resources/reload.html'; };
+    </script>
+  </head>
+  <body>
+    <div id="base" class="">
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u0" class="ax_default heading_2">
+        <div id="u0_div" class=""></div>
+        <div id="u0_text" class="text ">
+          <p><span>需求背景</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u1" class="ax_default paragraph">
+        <div id="u1_div" class=""></div>
+        <div id="u1_text" class="text ">
+          <p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">数据角度：</span></p><p><span style="font-family:'ArialMT', 'Arial';">1.</span><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">我的页是除首页外，渗透率最高的模块，数据上来看，达到55%</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">2.我的页中，本地音乐是用户参与第二多的模块，每天覆盖用户88.2万（10.10——10.16数据）</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';"><br></span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">用户角度：</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">基于音乐听旧不听新的特性，用户绝大多数的使用场景，都是要听自己历史上收藏/下载的老歌，在这个用户场景下，本地音乐是一个非常重要的用户需求承载模块。</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';"><br></span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">问题：</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">通过调研，目前本地音乐，最为核心的问题在于“外部音乐与酷我线上音乐匹配关系”缺失。</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">表现的状况是——用户从其它来源下载的音乐，在酷我本地音乐播放时，无法展示酷我线上内容（如评论，推荐内容等）</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u2" class="ax_default heading_2">
+        <div id="u2_div" class=""></div>
+        <div id="u2_text" class="text ">
+          <p><span>问题描述</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Image) -->
+      <div id="u3" class="ax_default image">
+        <img id="u3_img" class="img " src="images/我的页——本地歌曲逻辑整体优化/u3.jpg"/>
+      </div>
+
+      <!-- Unnamed (Image) -->
+      <div id="u4" class="ax_default image">
+        <img id="u4_img" class="img " src="images/我的页——本地歌曲逻辑整体优化/u4.jpg"/>
+      </div>
+
+      <!-- Unnamed (Image) -->
+      <div id="u5" class="ax_default image">
+        <img id="u5_img" class="img " src="images/我的页——本地歌曲逻辑整体优化/u5.jpg"/>
+      </div>
+
+      <!-- Unnamed (Image) -->
+      <div id="u6" class="ax_default image">
+        <img id="u6_img" class="img " src="images/我的页——本地歌曲逻辑整体优化/u6.jpg"/>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u7" class="ax_default heading_3">
+        <div id="u7_div" class=""></div>
+        <div id="u7_text" class="text ">
+          <p><span style="font-family:'PingFangSC-Semibold', 'PingFang SC Semibold', 'PingFang SC';font-weight:600;">酷我本地</span></p><p><span style="font-family:'PingFangSC-Semibold', 'PingFang SC Semibold', 'PingFang SC';font-weight:600;">使用体验</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u8" class="ax_default heading_3">
+        <div id="u8_div" class=""></div>
+        <div id="u8_text" class="text ">
+          <p><span style="font-family:'PingFangSC-Semibold', 'PingFang SC Semibold', 'PingFang SC';font-weight:600;">酷狗本地</span></p><p><span style="font-family:'PingFangSC-Semibold', 'PingFang SC Semibold', 'PingFang SC';font-weight:600;">使用体验</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u9" class="ax_default flow_shape">
+        <div id="u9_div" class=""></div>
+        <div id="u9_text" class="text ">
+          <p><span>删除原有本地文件后</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Image) -->
+      <div id="u10" class="ax_default image">
+        <img id="u10_img" class="img " src="images/我的页——本地歌曲逻辑整体优化/u10.jpg"/>
+      </div>
+
+      <!-- Unnamed (Image) -->
+      <div id="u11" class="ax_default image">
+        <img id="u11_img" class="img " src="images/我的页——本地歌曲逻辑整体优化/u11.jpg"/>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u12" class="ax_default flow_shape">
+        <div id="u12_div" class=""></div>
+        <div id="u12_text" class="text ">
+          <p><span>删除原有本地文件后</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Image) -->
+      <div id="u13" class="ax_default image">
+        <img id="u13_img" class="img " src="images/我的页——本地歌曲逻辑整体优化/u13.jpg"/>
+      </div>
+
+      <!-- Unnamed (Image) -->
+      <div id="u14" class="ax_default image">
+        <img id="u14_img" class="img " src="images/我的页——本地歌曲逻辑整体优化/u14.png"/>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u15" class="ax_default paragraph">
+        <div id="u15_div" class=""></div>
+        <div id="u15_text" class="text ">
+          <p><span>扫描外部歌曲（网易云下载）</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u16" class="ax_default paragraph">
+        <div id="u16_div" class=""></div>
+        <div id="u16_text" class="text ">
+          <p><span>外部歌曲播放界面（写真模式）：</span></p><p><span>缺失评论</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u17" class="ax_default paragraph">
+        <div id="u17_div" class=""></div>
+        <div id="u17_text" class="text ">
+          <p><span>外部歌曲播放界面（封面模式）：</span></p><p><span>缺失评论，推荐视频</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u18" class="ax_default paragraph">
+        <div id="u18_div" class=""></div>
+        <div id="u18_text" class="text ">
+          <p><span>外部歌曲被删除后：</span></p><p><span>置灰展示</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u19" class="ax_default paragraph">
+        <div id="u19_div" class=""></div>
+        <div id="u19_text" class="text ">
+          <p><span>点击置灰歌曲：</span></p><p><span>出现弹框，只能移除歌曲</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u20" class="ax_default paragraph">
+        <div id="u20_div" class=""></div>
+        <div id="u20_text" class="text ">
+          <p><span>外部歌曲播放界面（写真模式）：</span></p><p><span>具有完整内容</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u21" class="ax_default paragraph">
+        <div id="u21_div" class=""></div>
+        <div id="u21_text" class="text ">
+          <p><span>外部歌曲被删除后：</span></p><p><span>置灰</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u22" class="ax_default paragraph">
+        <div id="u22_div" class=""></div>
+        <div id="u22_text" class="text ">
+          <p><span>点击置灰歌曲：</span></p><p><span>支持重新下载</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u23" class="ax_default paragraph">
+        <div id="u23_div" class=""></div>
+        <div id="u23_text" class="text ">
+          <p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-size:20px;">-总结</span></p><p style="font-size:16px;"><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">目前酷我本地音乐，扫描到的本地歌曲，未与酷我曲库建立匹配关系，导致用户使用本地音乐时，外部歌曲的体验是不完整的。</span></p><p style="font-size:16px;"><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">而酷狗音乐，本地歌曲，与曲库建立了完整的匹配关系，用户在使用过程中的体验，与线上完全打通。</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u24" class="ax_default heading_2">
+        <div id="u24_div" class=""></div>
+        <div id="u24_text" class="text ">
+          <p><span>需求描述</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u25" class="ax_default flow_shape">
+        <div id="u25_div" class=""></div>
+        <div id="u25_text" class="text ">
+          <p><span>本地列表新增歌曲</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u26" class="ax_default flow_shape">
+        <div id="u26_div" class=""></div>
+        <div id="u26_text" class="text ">
+          <p><span>音频指纹识别系统</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Connector) -->
+      <div id="u27" class="ax_default connector">
+        <img id="u27_seg0" class="img " src="images/我的页——本地歌曲逻辑整体优化/u27_seg0.png" alt="u27_seg0"/>
+        <img id="u27_seg1" class="img " src="images/我的页——本地歌曲逻辑整体优化/u27_seg1.png" alt="u27_seg1"/>
+        <div id="u27_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u28" class="ax_default paragraph">
+        <div id="u28_div" class=""></div>
+        <div id="u28_text" class="text ">
+          <p><span>用户在本地播放歌曲；</span></p><p><span>或者本地列表该歌曲点击更多按钮</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Diamond) -->
+      <div id="u29" class="ax_default flow_shape">
+        <img id="u29_img" class="img " src="images/我的页——本地歌曲逻辑整体优化/u29.png"/>
+        <div id="u29_text" class="text ">
+          <p><span>是否成功返回匹配id</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u30" class="ax_default flow_shape">
+        <div id="u30_div" class=""></div>
+        <div id="u30_text" class="text ">
+          <p><span>记录歌曲id</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u31" class="ax_default flow_shape">
+        <div id="u31_div" class=""></div>
+        <div id="u31_text" class="text ">
+          <p><span>下次播放时，继续请求识别系统</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Connector) -->
+      <div id="u32" class="ax_default connector">
+        <img id="u32_seg0" class="img " src="images/我的页——本地歌曲逻辑整体优化/u32_seg0.png" alt="u32_seg0"/>
+        <img id="u32_seg1" class="img " src="images/我的页——本地歌曲逻辑整体优化/u27_seg1.png" alt="u32_seg1"/>
+        <div id="u32_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Connector) -->
+      <div id="u33" class="ax_default connector">
+        <img id="u33_seg0" class="img " src="images/我的页——本地歌曲逻辑整体优化/u33_seg0.png" alt="u33_seg0"/>
+        <img id="u33_seg1" class="img " src="images/我的页——本地歌曲逻辑整体优化/u27_seg1.png" alt="u33_seg1"/>
+        <div id="u33_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Connector) -->
+      <div id="u34" class="ax_default connector">
+        <img id="u34_seg0" class="img " src="images/我的页——本地歌曲逻辑整体优化/u34_seg0.png" alt="u34_seg0"/>
+        <img id="u34_seg1" class="img " src="images/我的页——本地歌曲逻辑整体优化/u34_seg1.png" alt="u34_seg1"/>
+        <div id="u34_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Connector) -->
+      <div id="u35" class="ax_default connector">
+        <img id="u35_seg0" class="img " src="images/我的页——本地歌曲逻辑整体优化/u35_seg0.png" alt="u35_seg0"/>
+        <img id="u35_seg1" class="img " src="images/我的页——本地歌曲逻辑整体优化/u35_seg1.png" alt="u35_seg1"/>
+        <img id="u35_seg2" class="img " src="images/我的页——本地歌曲逻辑整体优化/u35_seg2.png" alt="u35_seg2"/>
+        <div id="u35_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u36" class="ax_default paragraph">
+        <div id="u36_div" class=""></div>
+        <div id="u36_text" class="text ">
+          <p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-size:20px;">-需求改动</span></p><p style="font-size:16px;"><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">通过调研，目前我们有一套“基于音频指纹的歌曲识别系统”，仅用作用户“一键升级音质时使用”。</span></p><p style="font-size:16px;"><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">目前已知原因至少有以下问题：</span></p><p style="font-size:16px;"><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">1.早起该识别系统准确率较差</span></p><p style="font-size:16px;"><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">2.后续准确率得到一定提升，但接口承载能力有问题，导致较多歌曲请求识别接口时，习惯性宕机</span></p><p style="font-size:16px;"><span style="font-family:'PingFangSC-Regular', 'PingFang SC';"><br></span></p><p style="font-size:16px;"><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">故而目前方案调整为：</span></p><p style="font-size:16px;"><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">1.申请测试资源，对现有音频指纹识别系统结果进行一个客观测试</span></p><p style="font-size:16px;"><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">2.对于请求接口的机制进行调整，不再批量全部请求，改为根据用户听歌行为请求</span></p><p style="font-size:16px;"><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">3.给大后台提需求，增强该接口性能</span></p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
