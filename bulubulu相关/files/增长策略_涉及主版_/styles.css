@@ -2921,8 +2921,8 @@
 #u98 {
   border-width:0px;
   position:absolute;
-  left:380px;
-  top:585px;
+  left:364px;
+  top:582px;
   width:327px;
   height:158px;
 }
@@ -3043,5 +3043,36 @@
   top:0px;
   width:0px;
   visibility:hidden;
+  word-wrap:break-word;
+}
+#u103_div {
+  border-width:0px;
+  position:absolute;
+  left:0px;
+  top:0px;
+  width:378px;
+  height:224px;
+  background:inherit;
+  background-color:rgba(255, 255, 255, 0);
+  border:none;
+  border-radius:0px;
+  -moz-box-shadow:none;
+  -webkit-box-shadow:none;
+  box-shadow:none;
+}
+#u103 {
+  border-width:0px;
+  position:absolute;
+  left:742px;
+  top:516px;
+  width:378px;
+  height:224px;
+}
+#u103_text {
+  border-width:0px;
+  position:absolute;
+  left:0px;
+  top:0px;
+  width:378px;
   word-wrap:break-word;
 }
