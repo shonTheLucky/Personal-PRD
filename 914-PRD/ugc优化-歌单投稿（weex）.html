@@ -1,0 +1,513 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <title>UGC优化-歌单投稿（weex）</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <link href="resources/css/jquery-ui-themes.css" type="text/css" rel="stylesheet"/>
+    <link href="resources/css/axure_rp_page.css" type="text/css" rel="stylesheet"/>
+    <link href="data/styles.css" type="text/css" rel="stylesheet"/>
+    <link href="files/ugc优化-歌单投稿（weex）/styles.css" type="text/css" rel="stylesheet"/>
+    <script src="resources/scripts/jquery-1.7.1.min.js"></script>
+    <script src="resources/scripts/jquery-ui-1.8.10.custom.min.js"></script>
+    <script src="resources/scripts/prototypePre.js"></script>
+    <script src="data/document.js"></script>
+    <script src="resources/scripts/prototypePost.js"></script>
+    <script src="files/ugc优化-歌单投稿（weex）/data.js"></script>
+    <script type="text/javascript">
+      $axure.utils.getTransparentGifPath = function() { return 'resources/images/transparent.gif'; };
+      $axure.utils.getOtherPath = function() { return 'resources/Other.html'; };
+      $axure.utils.getReloadPath = function() { return 'resources/reload.html'; };
+    </script>
+  </head>
+  <body>
+    <div id="base" class="">
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u0" class="ax_default heading_2">
+        <div id="u0_div" class=""></div>
+        <div id="u0_text" class="text ">
+          <p><span style="font-family:'Arial-BoldMT', 'Arial Bold', 'Arial';font-weight:700;">UGC</span><span style="font-family:'PingFangSC-Semibold', 'PingFang SC Semibold', 'PingFang SC';font-weight:600;">优化</span><span style="font-family:'Arial-BoldMT', 'Arial Bold', 'Arial';font-weight:700;">-</span><span style="font-family:'PingFangSC-Semibold', 'PingFang SC Semibold', 'PingFang SC';font-weight:600;">歌单投稿</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u1" class="ax_default heading_2">
+        <div id="u1_div" class=""></div>
+        <div id="u1_text" class="text ">
+          <p><span>需求背景</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u2" class="ax_default paragraph">
+        <div id="u2_div" class=""></div>
+        <div id="u2_text" class="text ">
+          <p><span style="font-family:'ArialMT', 'Arial';">ugc</span><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">歌单投稿流程，是移动端目前ugc用户贡献歌单的唯一路径。</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">目前在运营过程中，发现当前的投稿流程，存在一些体验上可优化的点：</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">&#149; 用户选择歌单准备投稿时，若当前歌单各个属性存在某些硬件缺陷，则可以直接给出提示</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">&#149; 允许用户在投稿流程，便捷新建歌单</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">&#149; 消息中心里，用户歌单未通过时，优化用户改进歌单的流程</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';"><br></span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">期望，通过这一系列需求改动，能使UGC歌单这部分用户投稿效率提高</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u3" class="ax_default heading_2">
+        <div id="u3_div" class=""></div>
+        <div id="u3_text" class="text ">
+          <p><span>需求1：歌单投稿流程改动</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Image) -->
+      <div id="u4" class="ax_default image">
+        <img id="u4_img" class="img " src="images/ugc优化-歌单投稿（weex）/u4.png"/>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u5" class="ax_default heading_3">
+        <div id="u5_div" class=""></div>
+        <div id="u5_text" class="text ">
+          <p><span>期望改为：</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u6" class="ax_default heading_3">
+        <div id="u6_div" class=""></div>
+        <div id="u6_text" class="text ">
+          <p><span>1-投稿首页视觉和文案优化</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u7" class="ax_default heading_3">
+        <div id="u7_div" class=""></div>
+        <div id="u7_text" class="text ">
+          <p><span>2-选择投稿页，增加新建歌单快捷入口</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Image) -->
+      <div id="u8" class="ax_default image">
+        <img id="u8_img" class="img " src="images/ugc优化-歌单投稿（weex）/u8.png"/>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u9" class="ax_default heading_3">
+        <div id="u9_div" class=""></div>
+        <div id="u9_text" class="text ">
+          <p><span>3-若用户歌单存在硬件缺陷，直接进编辑页</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u10" class="ax_default paragraph">
+        <div id="u10_div" class=""></div>
+        <div id="u10_text" class="text ">
+          <p style="font-size:16px;"><span style="font-family:'ArialMT', 'Arial';">-</span><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">改动：</span></p><p style="font-size:14px;"><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">视觉和文案优化，根据现在歌单运营过程遇到的问题，说清楚重点容易犯错的问题。</span></p><p style="font-size:14px;"><span style="font-family:'PingFangSC-Regular', 'PingFang SC';"><br></span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u11" class="ax_default paragraph">
+        <div id="u11_div" class=""></div>
+        <div id="u11_text" class="text ">
+          <p style="font-size:16px;"><span style="font-family:'ArialMT', 'Arial';">-</span><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">改动：</span></p><p style="font-size:14px;"><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">在“选择歌单投稿页”中，增加一个【新建歌单投稿】的入口。</span></p><p style="font-size:14px;"><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">点击后进入一个如右图的新建页面</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u12" class="ax_default primary_button">
+        <div id="u12_div" class=""></div>
+        <div id="u12_text" class="text ">
+          <p><span>新建歌单投稿</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u13" class="ax_default paragraph">
+        <div id="u13_div" class=""></div>
+        <div id="u13_text" class="text ">
+          <p style="font-size:16px;"><span style="font-family:'ArialMT', 'Arial';">-</span><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">改动：</span></p><p style="font-size:14px;"><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">歌单投稿时，若歌单的基础属性不合格，则进入到上方页面；</span></p><p style="font-size:14px;"><span style="font-family:'PingFangSC-Regular', 'PingFang SC';"><br></span></p><p style="font-size:14px;"><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">任意一项不符合以下标准时，则自动出红字提示</span></p><p style="font-size:14px;"><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">标题：标题字数7~20个字</span></p><p style="font-size:14px;"><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">标签：请选择1到3个标签</span></p><p style="font-size:14px;"><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">封面：请上传大于600*600的封面</span></p><p style="font-size:14px;"><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">歌曲：投稿歌单至少需要10首</span></p><p style="font-size:14px;"><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">简介：简介不少于10个字，与歌单主题相关</span></p><p style="font-size:14px;"><span style="font-family:'PingFangSC-Regular', 'PingFang SC';"><br></span></p><p style="font-size:14px;"><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">各项属性均符合基本要求后，点击提交按钮，则提示投稿成功</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u14" class="ax_default heading_2">
+        <div id="u14_div" class=""></div>
+        <div id="u14_text" class="text ">
+          <p><span>需求2：歌单审核未通过时，消息中心流程优化</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Image) -->
+      <div id="u15" class="ax_default image">
+        <img id="u15_img" class="img " src="images/ugc优化-歌单投稿（weex）/u15.png"/>
+      </div>
+
+      <!-- Unnamed (Image) -->
+      <div id="u16" class="ax_default image">
+        <img id="u16_img" class="img " src="images/ugc优化-歌单投稿（weex）/u16.png"/>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u17" class="ax_default heading_3">
+        <div id="u17_div" class=""></div>
+        <div id="u17_text" class="text ">
+          <p><span>1-未通过时，消息中心明细</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u18" class="ax_default box_2">
+        <div id="u18_div" class=""></div>
+        <div id="u18_text" class="text ">
+          <p><span>你投稿的歌单“封面、标签”存在一定问题。</span></p><p><span style="color:#FFCC00;">查看改进意见&gt;&gt;</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u19" class="ax_default box_1">
+        <div id="u19_div" class=""></div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u20" class="ax_default label">
+        <div id="u20_div" class=""></div>
+        <div id="u20_text" class="text ">
+          <p><span>标题</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u21" class="ax_default label">
+        <div id="u21_div" class=""></div>
+        <div id="u21_text" class="text ">
+          <p><span>未通过</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u22" class="ax_default box_1">
+        <div id="u22_div" class=""></div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u23" class="ax_default label">
+        <div id="u23_div" class=""></div>
+        <div id="u23_text" class="text ">
+          <p><span>封面</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u24" class="ax_default label">
+        <div id="u24_div" class=""></div>
+        <div id="u24_text" class="text ">
+          <p><span>通过</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u25" class="ax_default box_1">
+        <div id="u25_div" class=""></div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u26" class="ax_default label">
+        <div id="u26_div" class=""></div>
+        <div id="u26_text" class="text ">
+          <p><span>标签</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u27" class="ax_default label">
+        <div id="u27_div" class=""></div>
+        <div id="u27_text" class="text ">
+          <p><span>未通过</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u28" class="ax_default box_1">
+        <div id="u28_div" class=""></div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u29" class="ax_default label">
+        <div id="u29_div" class=""></div>
+        <div id="u29_text" class="text ">
+          <p><span>曲目</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u30" class="ax_default label">
+        <div id="u30_div" class=""></div>
+        <div id="u30_text" class="text ">
+          <p><span>通过</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u31" class="ax_default box_1">
+        <div id="u31_div" class=""></div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u32" class="ax_default label">
+        <div id="u32_div" class=""></div>
+        <div id="u32_text" class="text ">
+          <p><span>封面</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u33" class="ax_default label">
+        <div id="u33_div" class=""></div>
+        <div id="u33_text" class="text ">
+          <p><span>未通过</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Image) -->
+      <div id="u34" class="ax_default image">
+        <img id="u34_img" class="img " src="images/ugc优化-歌单投稿（weex）/u8.png"/>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u35" class="ax_default heading_3">
+        <div id="u35_div" class=""></div>
+        <div id="u35_text" class="text ">
+          <p><span>2-点击左方消息后，跳转投稿编辑页</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u36" class="ax_default paragraph">
+        <div id="u36_div" class=""></div>
+        <div id="u36_text" class="text ">
+          <p style="font-size:16px;"><span style="font-family:'ArialMT', 'Arial';">-</span><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">改动：</span></p><p style="font-size:14px;"><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">针对“歌单审核未通过”的消息，展示内容进行调整。</span></p><p style="font-size:14px;"><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">1、去掉原有的运营编辑的审核结论</span></p><p style="font-size:14px;"><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">2、文案中只展示固定内容——你投稿的歌单“xx，xx”存在一定问题</span></p><p style="font-size:14px;"><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">3、文案下方，以具象化的标签来展示该歌单的审核结果</span></p><p style="font-size:14px;"><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">4、点击该条信息所有位置，均是跳转到“投稿编辑页面”（右图）</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u37" class="ax_default paragraph">
+        <div id="u37_div" class=""></div>
+        <div id="u37_text" class="text ">
+          <p style="font-size:16px;"><span style="font-family:'ArialMT', 'Arial';">-</span><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">改动：</span></p><p style="font-size:14px;"><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">该页面复用需求1中的“投稿编辑页”，存在一定区别：</span></p><p style="font-size:14px;"><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">1、红色的提示文案，来自“审核后台”里，运营同学主管选择的不通过理由</span></p><p style="font-size:14px;"><span style="font-family:'PingFangSC-Regular', 'PingFang SC';"><br></span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u38" class="ax_default box_2">
+        <div id="u38_div" class=""></div>
+        <div id="u38_text" class="text ">
+          <p><span>标题尽量不要用太多中英文混写</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u39" class="ax_default box_2">
+        <div id="u39_div" class=""></div>
+        <div id="u39_text" class="text ">
+          <p><span>你选择的标签，不符合歌曲语种</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u40" class="ax_default box_2">
+        <div id="u40_div" class=""></div>
+        <div id="u40_text" class="text ">
+          <p><span>封面不够清晰</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u41" class="ax_default box_2">
+        <div id="u41_div" class=""></div>
+        <div id="u41_text" class="text ">
+          <p><span>歌单介绍需要跟歌单主题有关</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u42" class="ax_default paragraph">
+        <div id="u42_div" class=""></div>
+        <div id="u42_text" class="text ">
+          <p><span>点击后：当前页直接编辑标题</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u43" class="ax_default paragraph">
+        <div id="u43_div" class=""></div>
+        <div id="u43_text" class="text ">
+          <p><span>点击后：跳转“歌单标签选择页”（跟线上一致）</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u44" class="ax_default paragraph">
+        <div id="u44_div" class=""></div>
+        <div id="u44_text" class="text ">
+          <p><span>点击后：进入拍照/选择相册流程（跟线上一致）</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u45" class="ax_default paragraph">
+        <div id="u45_div" class=""></div>
+        <div id="u45_text" class="text ">
+          <p><span>点击后：进入歌单内【添加歌曲】流程（跟线上一致）</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u46" class="ax_default paragraph">
+        <div id="u46_div" class=""></div>
+        <div id="u46_text" class="text ">
+          <p><span>点击后：当前页直接编辑介绍</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Horizontal Line) -->
+      <div id="u47" class="compound ax_default line" WidgetHeight="1" WidgetWidth="75" CompoundMode="true">
+        <img id="u47_img" class="singleImg img " src="images/ugc优化-歌单投稿（weex）/u47.png"/>
+        <div id="u47p000" class="ax_vector_shape" WidgetTopLeftX="-0.4625" WidgetTopLeftY="-0.166666666666667" WidgetTopRightX="0.475" WidgetTopRightY="-0.166666666666667" WidgetBottomLeftX="-0.4625" WidgetBottomLeftY="0" WidgetBottomRightX="0.475" WidgetBottomRightY="0">
+          <img id="u47p000_img" class="img " src="images/ugc优化-歌单投稿（weex）/u47p000.png"/>
+        </div>
+        <div id="u47p001" class="ax_vector_shape" WidgetTopLeftX="-0.25" WidgetTopLeftY="-0.5" WidgetTopRightX="18.5" WidgetTopRightY="-0.5" WidgetBottomLeftX="-0.25" WidgetBottomLeftY="0" WidgetBottomRightX="18.5" WidgetBottomRightY="0">
+          <img id="u47p001_img" class="img " src="images/ugc优化-歌单投稿（weex）/u47p001.png"/>
+        </div>
+        <div id="u47p002" class="ax_vector_shape" WidgetTopLeftX="3.55" WidgetTopLeftY="0" WidgetTopRightX="-0.2" WidgetTopRightY="0" WidgetBottomLeftX="3.55" WidgetBottomLeftY="-0.05" WidgetBottomRightX="-0.2" WidgetBottomRightY="-0.05">
+          <img id="u47p002_img" class="img " src="images/ugc优化-歌单投稿（weex）/u47p002.png"/>
+        </div>
+      </div>
+
+      <!-- Unnamed (Horizontal Line) -->
+      <div id="u48" class="compound ax_default line" WidgetHeight="1" WidgetWidth="75" CompoundMode="true">
+        <img id="u48_img" class="singleImg img " src="images/ugc优化-歌单投稿（weex）/u47.png"/>
+        <div id="u48p000" class="ax_vector_shape" WidgetTopLeftX="-0.4625" WidgetTopLeftY="-0.166666666666667" WidgetTopRightX="0.475" WidgetTopRightY="-0.166666666666667" WidgetBottomLeftX="-0.4625" WidgetBottomLeftY="0" WidgetBottomRightX="0.475" WidgetBottomRightY="0">
+          <img id="u48p000_img" class="img " src="images/ugc优化-歌单投稿（weex）/u47p000.png"/>
+        </div>
+        <div id="u48p001" class="ax_vector_shape" WidgetTopLeftX="-0.25" WidgetTopLeftY="-0.5" WidgetTopRightX="18.5" WidgetTopRightY="-0.5" WidgetBottomLeftX="-0.25" WidgetBottomLeftY="0" WidgetBottomRightX="18.5" WidgetBottomRightY="0">
+          <img id="u48p001_img" class="img " src="images/ugc优化-歌单投稿（weex）/u47p001.png"/>
+        </div>
+        <div id="u48p002" class="ax_vector_shape" WidgetTopLeftX="3.55" WidgetTopLeftY="0" WidgetTopRightX="-0.2" WidgetTopRightY="0" WidgetBottomLeftX="3.55" WidgetBottomLeftY="-0.05" WidgetBottomRightX="-0.2" WidgetBottomRightY="-0.05">
+          <img id="u48p002_img" class="img " src="images/ugc优化-歌单投稿（weex）/u47p002.png"/>
+        </div>
+      </div>
+
+      <!-- Unnamed (Horizontal Line) -->
+      <div id="u49" class="compound ax_default line" WidgetHeight="1" WidgetWidth="75" CompoundMode="true">
+        <img id="u49_img" class="singleImg img " src="images/ugc优化-歌单投稿（weex）/u47.png"/>
+        <div id="u49p000" class="ax_vector_shape" WidgetTopLeftX="-0.4625" WidgetTopLeftY="-0.166666666666667" WidgetTopRightX="0.475" WidgetTopRightY="-0.166666666666667" WidgetBottomLeftX="-0.4625" WidgetBottomLeftY="0" WidgetBottomRightX="0.475" WidgetBottomRightY="0">
+          <img id="u49p000_img" class="img " src="images/ugc优化-歌单投稿（weex）/u47p000.png"/>
+        </div>
+        <div id="u49p001" class="ax_vector_shape" WidgetTopLeftX="-0.25" WidgetTopLeftY="-0.5" WidgetTopRightX="18.5" WidgetTopRightY="-0.5" WidgetBottomLeftX="-0.25" WidgetBottomLeftY="0" WidgetBottomRightX="18.5" WidgetBottomRightY="0">
+          <img id="u49p001_img" class="img " src="images/ugc优化-歌单投稿（weex）/u47p001.png"/>
+        </div>
+        <div id="u49p002" class="ax_vector_shape" WidgetTopLeftX="3.55" WidgetTopLeftY="0" WidgetTopRightX="-0.2" WidgetTopRightY="0" WidgetBottomLeftX="3.55" WidgetBottomLeftY="-0.05" WidgetBottomRightX="-0.2" WidgetBottomRightY="-0.05">
+          <img id="u49p002_img" class="img " src="images/ugc优化-歌单投稿（weex）/u47p002.png"/>
+        </div>
+      </div>
+
+      <!-- Unnamed (Horizontal Line) -->
+      <div id="u50" class="compound ax_default line" WidgetHeight="1" WidgetWidth="75" CompoundMode="true">
+        <img id="u50_img" class="singleImg img " src="images/ugc优化-歌单投稿（weex）/u47.png"/>
+        <div id="u50p000" class="ax_vector_shape" WidgetTopLeftX="-0.4625" WidgetTopLeftY="-0.166666666666667" WidgetTopRightX="0.475" WidgetTopRightY="-0.166666666666667" WidgetBottomLeftX="-0.4625" WidgetBottomLeftY="0" WidgetBottomRightX="0.475" WidgetBottomRightY="0">
+          <img id="u50p000_img" class="img " src="images/ugc优化-歌单投稿（weex）/u47p000.png"/>
+        </div>
+        <div id="u50p001" class="ax_vector_shape" WidgetTopLeftX="-0.25" WidgetTopLeftY="-0.5" WidgetTopRightX="18.5" WidgetTopRightY="-0.5" WidgetBottomLeftX="-0.25" WidgetBottomLeftY="0" WidgetBottomRightX="18.5" WidgetBottomRightY="0">
+          <img id="u50p001_img" class="img " src="images/ugc优化-歌单投稿（weex）/u47p001.png"/>
+        </div>
+        <div id="u50p002" class="ax_vector_shape" WidgetTopLeftX="3.55" WidgetTopLeftY="0" WidgetTopRightX="-0.2" WidgetTopRightY="0" WidgetBottomLeftX="3.55" WidgetBottomLeftY="-0.05" WidgetBottomRightX="-0.2" WidgetBottomRightY="-0.05">
+          <img id="u50p002_img" class="img " src="images/ugc优化-歌单投稿（weex）/u47p002.png"/>
+        </div>
+      </div>
+
+      <!-- Unnamed (Horizontal Line) -->
+      <div id="u51" class="compound ax_default line" WidgetHeight="1" WidgetWidth="75" CompoundMode="true">
+        <img id="u51_img" class="singleImg img " src="images/ugc优化-歌单投稿（weex）/u47.png"/>
+        <div id="u51p000" class="ax_vector_shape" WidgetTopLeftX="-0.4625" WidgetTopLeftY="-0.166666666666667" WidgetTopRightX="0.475" WidgetTopRightY="-0.166666666666667" WidgetBottomLeftX="-0.4625" WidgetBottomLeftY="0" WidgetBottomRightX="0.475" WidgetBottomRightY="0">
+          <img id="u51p000_img" class="img " src="images/ugc优化-歌单投稿（weex）/u47p000.png"/>
+        </div>
+        <div id="u51p001" class="ax_vector_shape" WidgetTopLeftX="-0.25" WidgetTopLeftY="-0.5" WidgetTopRightX="18.5" WidgetTopRightY="-0.5" WidgetBottomLeftX="-0.25" WidgetBottomLeftY="0" WidgetBottomRightX="18.5" WidgetBottomRightY="0">
+          <img id="u51p001_img" class="img " src="images/ugc优化-歌单投稿（weex）/u47p001.png"/>
+        </div>
+        <div id="u51p002" class="ax_vector_shape" WidgetTopLeftX="3.55" WidgetTopLeftY="0" WidgetTopRightX="-0.2" WidgetTopRightY="0" WidgetBottomLeftX="3.55" WidgetBottomLeftY="-0.05" WidgetBottomRightX="-0.2" WidgetBottomRightY="-0.05">
+          <img id="u51p002_img" class="img " src="images/ugc优化-歌单投稿（weex）/u47p002.png"/>
+        </div>
+      </div>
+
+      <!-- Unnamed (Horizontal Line) -->
+      <div id="u52" class="compound ax_default line" WidgetHeight="1" WidgetWidth="110" CompoundMode="true">
+        <img id="u52_img" class="singleImg img " src="images/ugc优化-歌单投稿（weex）/u52.png"/>
+        <div id="u52p000" class="ax_vector_shape" WidgetTopLeftX="-0.482456140350877" WidgetTopLeftY="0" WidgetTopRightX="0.482456140350877" WidgetTopRightY="0" WidgetBottomLeftX="-0.482456140350877" WidgetBottomLeftY="0.166666666666667" WidgetBottomRightX="0.482456140350877" WidgetBottomRightY="0.166666666666667">
+          <img id="u52p000_img" class="img " src="images/ugc优化-歌单投稿（weex）/u52p000.png"/>
+        </div>
+        <div id="u52p001" class="ax_vector_shape" WidgetTopLeftX="0" WidgetTopLeftY="-0.25" WidgetTopRightX="27.5" WidgetTopRightY="-0.25" WidgetBottomLeftX="0" WidgetBottomLeftY="0" WidgetBottomRightX="27.5" WidgetBottomRightY="0">
+          <img id="u52p001_img" class="img " src="images/ugc优化-歌单投稿（weex）/u52p001.png"/>
+        </div>
+        <div id="u52p002" class="ax_vector_shape" WidgetTopLeftX="5.3" WidgetTopLeftY="0.05" WidgetTopRightX="-0.2" WidgetTopRightY="0.05" WidgetBottomLeftX="5.3" WidgetBottomLeftY="0" WidgetBottomRightX="-0.2" WidgetBottomRightY="0">
+          <img id="u52p002_img" class="img " src="images/ugc优化-歌单投稿（weex）/u52p002.png"/>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u53" class="ax_default paragraph">
+        <div id="u53_div" class=""></div>
+        <div id="u53_text" class="text ">
+          <p><span>点击后：跳转“优质歌单教程页面”，H5单独开发，类似右图</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Image) -->
+      <div id="u54" class="ax_default image">
+        <img id="u54_img" class="img " src="images/ugc优化-歌单投稿（weex）/u54.png"/>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u55" class="ax_default box_1">
+        <div id="u55_div" class=""></div>
+        <div id="u55_text" class="text ">
+          <p><span>开心标签：歌单中大部分歌曲属于节奏明快，能让听众心情愉悦时，可选用该标签。</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u56" class="ax_default primary_button">
+        <div id="u56_div" class=""></div>
+        <div id="u56_text" class="text ">
+          <p><span>确认使用该标签</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u57" class="ax_default heading_2">
+        <div id="u57_div" class=""></div>
+        <div id="u57_text" class="text ">
+          <p><span>需求3：选择标签页优化</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u58" class="ax_default paragraph">
+        <div id="u58_div" class=""></div>
+        <div id="u58_text" class="text ">
+          <p style="font-size:16px;"><span style="font-family:'ArialMT', 'Arial';font-weight:400;">-</span><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">改动：</span></p><p style="font-size:14px;"><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">针对“标签选择页”进行如下改动：</span></p><p style="font-size:14px;"><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">1、当用户点击某标签时，下方出现浮窗，展示运营提供的标签解释，以及确定按钮</span></p><p style="font-size:14px;"><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">2、用户操作流程变为——点击标签，在弹出的浮窗中，点击确认，才算作选择了该标签。</span></p><p style="font-size:14px;"><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;"><br></span></p><p style="font-size:14px;"><span style="font-family:'PingFangSC-Semibold', 'PingFang SC Semibold', 'PingFang SC';font-weight:600;">注意：这个标签页改动，仅限于从投稿-编辑流程过来的请求。</span></p><p style="font-size:14px;"><span style="font-family:'PingFangSC-Semibold', 'PingFang SC Semibold', 'PingFang SC';font-weight:600;">用户自建歌单的编辑流程，不改，保持线上</span></p><p style="font-size:14px;"><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;"><br></span></p><p style="font-size:14px;"><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;"><br></span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Image) -->
+      <div id="u59" class="ax_default image">
+        <img id="u59_img" class="img " src="images/ugc优化-歌单投稿（weex）/u59.png"/>
+      </div>
+
+      <!-- Unnamed (Image) -->
+      <div id="u60" class="ax_default image">
+        <img id="u60_img" class="img " src="images/ugc优化-歌单投稿（weex）/u60.png"/>
+      </div>
+    </div>
+  </body>
+</html>
